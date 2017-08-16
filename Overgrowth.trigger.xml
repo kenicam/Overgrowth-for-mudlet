@@ -893,6 +893,28 @@ end</script>
                     <integer>1</integer>
                 </regexCodePropertyList>
             </Trigger>
+            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+                <name>Willowisp</name>
+                <script>if is_target(matches[2]) then
+overgrow(&quot;Target returned: Willowisp&quot;)
+end</script>
+                <triggerType>0</triggerType>
+                <conditonLineDelta>0</conditonLineDelta>
+                <mStayOpen>0</mStayOpen>
+                <mCommand></mCommand>
+                <packageName></packageName>
+                <mFgColor>#ff0000</mFgColor>
+                <mBgColor>#ffff00</mBgColor>
+                <mSoundFile></mSoundFile>
+                <colorTriggerFgColor>#000000</colorTriggerFgColor>
+                <colorTriggerBgColor>#000000</colorTriggerBgColor>
+                <regexCodeList>
+                    <string>^The willowisp returns with (\w+) following closely behind it\, and slowly fades from sight\.$</string>
+                </regexCodeList>
+                <regexCodePropertyList>
+                    <integer>1</integer>
+                </regexCodePropertyList>
+            </Trigger>
         </TriggerGroup>
         <TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
             <name>Sap</name>
@@ -1142,6 +1164,26 @@ segtell(name..&quot; is summoning &quot;..summoned)</script>
                         <integer>1</integer>
                     </regexCodePropertyList>
                 </Trigger>
+            </Trigger>
+            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+                <name>Willowisp</name>
+                <script>overgrow(&quot;You are being willowisped, Drop monolith or move away&quot;)</script>
+                <triggerType>0</triggerType>
+                <conditonLineDelta>0</conditonLineDelta>
+                <mStayOpen>0</mStayOpen>
+                <mCommand></mCommand>
+                <packageName></packageName>
+                <mFgColor>#ff0000</mFgColor>
+                <mBgColor>#ffff00</mBgColor>
+                <mSoundFile></mSoundFile>
+                <colorTriggerFgColor>#000000</colorTriggerFgColor>
+                <colorTriggerBgColor>#000000</colorTriggerBgColor>
+                <regexCodeList>
+                    <string>^You hear the sound of tinkling silver bells and see a ball of light bobbing in the air before you\.$</string>
+                </regexCodeList>
+                <regexCodePropertyList>
+                    <integer>1</integer>
+                </regexCodePropertyList>
             </Trigger>
         </TriggerGroup>
         <TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
@@ -1431,55 +1473,38 @@ cecho(&quot;\n&lt;blue&gt;|------------------------------MELD MELD MELD MELD----
     </TriggerPackage>
     <TimerPackage/>
     <AliasPackage>
-        <AliasGroup isActive="yes" isFolder="yes">
-            <name>Overgrowth</name>
-            <script></script>
-            <command></command>
-            <packageName></packageName>
-            <regex></regex>
-            <Alias isActive="yes" isFolder="no">
-                <name>Change Announce </name>
-                <script>
+        <Alias isActive="yes" isFolder="no">
+            <name>Change Announce </name>
+            <script>
 ogchannel = matches[2]
 ognote(&quot;ANNOUNCING THINGS ON: '&quot;..ogchannel..&quot;'&quot;)</script>
-                <command></command>
-                <packageName></packageName>
-                <regex>^ogtell (.+?)$</regex>
-            </Alias>
-            <Alias isActive="yes" isFolder="no">
-                <name>Quck target</name>
-                <script>target = ogquicktarget
+            <command></command>
+            <packageName></packageName>
+            <regex>^ogtell (.+?)$</regex>
+        </Alias>
+        <Alias isActive="yes" isFolder="no">
+            <name>Quck target</name>
+            <script>target = ogquicktarget
 ognote(&quot;TARGET CHANGED TO: &quot;..ogquicktarget)</script>
-                <command></command>
-                <packageName></packageName>
-                <regex>^qt$</regex>
-            </Alias>
-            <Alias isActive="yes" isFolder="no">
-                <name>Leader</name>
-                <script>ogleader = string.title(matches[2])
+            <command></command>
+            <packageName></packageName>
+            <regex>^qt$</regex>
+        </Alias>
+        <Alias isActive="yes" isFolder="no">
+            <name>Leader</name>
+            <script>ogleader = string.title(matches[2])
 ognote(&quot;Leader set to: &quot;..ogleader)</script>
-                <command></command>
-                <packageName></packageName>
-                <regex>^ogleader (\w+)$</regex>
-            </Alias>
-        </AliasGroup>
+            <command></command>
+            <packageName></packageName>
+            <regex>^ogleader (\w+)$</regex>
+        </Alias>
     </AliasPackage>
     <ActionPackage/>
     <ScriptPackage>
-        <ScriptGroup isActive="yes" isFolder="yes">
-            <name>Overgrowth</name>
+        <Script isActive="yes" isFolder="no">
+            <name>Overgrowth Functions</name>
             <packageName></packageName>
-            <script>-------------------------------------------------
---         Put your Lua functions here.        --
---                                             --
--- Note that you can also use external Scripts --
--------------------------------------------------
-</script>
-            <eventHandlerList/>
-            <Script isActive="yes" isFolder="no">
-                <name>Overgrowth Functions</name>
-                <packageName></packageName>
-                <script>
+            <script>
 ogchannel = &quot;clan seg tell&quot;
 ogleader = &quot;Sondayga&quot;
 ogquicktarget = &quot;none&quot;
@@ -1546,9 +1571,8 @@ end
 
 
 </script>
-                <eventHandlerList/>
-            </Script>
-        </ScriptGroup>
+            <eventHandlerList/>
+        </Script>
     </ScriptPackage>
     <KeyPackage/>
 </MudletPackage>
