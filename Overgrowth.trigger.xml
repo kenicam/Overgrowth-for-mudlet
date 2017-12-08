@@ -66,12 +66,10 @@ end</script>
             </Trigger>
             <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
                 <name>Got to room</name>
-                <script>if matches[2] == ogleader then
-leader_room = string.match(matches[3], &quot;(%d%d%d+)&quot;)
+                <script>leader_room = string.match(matches[3], &quot;(%d%d%d+)&quot;)
 if leader_room then
-cechoLink(&quot;\n&lt;green&gt;&lt;GROUP UP, click to travel&gt;&quot;, [[send(&quot;path walk &quot;..leader_room)]], &quot;GoTo&quot;, true )
-cechoLink(&quot;\n&lt;green&gt;&lt;GROUP UP, click to travel&gt;&quot;, [[send(&quot;path walk &quot;..leader_room)]], &quot;GoTo&quot;, true )
-end
+cechoLink(&quot;\n&lt;green&gt;&lt;GROUP UP, click to travel&gt;&quot;, [[send(&quot;path track &quot;..leader_room)]], &quot;GoTo&quot;, true )
+cechoLink(&quot;\n&lt;green&gt;&lt;GROUP UP, click to travel&gt;&quot;, [[send(&quot;path track &quot;..leader_room)]], &quot;GoTo&quot;, true )
 end</script>
                 <triggerType>0</triggerType>
                 <conditonLineDelta>0</conditonLineDelta>

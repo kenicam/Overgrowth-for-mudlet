@@ -1,0 +1,33 @@
+# timestamp | duration | file | instruction | dir | modtime | etag | size | fileId | status | errorString | http result code | other size | other modtime | other etag | other fileId | other instruction
+#=#=#=# Syncrun started 2017-08-31T20:09:12
+#=#=#=#=# Propagation starts 2017-08-31T20:09:12 (last step: 146 msec, total: 146 msec)
+00:09:12||OgDownloader.trigger|INST_NEW|Up|1502856199|576633d0c7d921766d923e9eb4fb8632|1539|00000168octknoj4iltz|4||201|0|0|||INST_NONE|
+00:09:13||Overgrowth.trigger.xml|INST_NEW|Up|1502856960|d4514cf7e094a3db4f91063e2ca34364|98651|00000169octknoj4iltz|4||201|0|0|||INST_NONE|
+#=#=#=# Syncrun finished 2017-08-31T20:09:14 (last step: 1897 msec, total: 2043 msec)
+#=#=#=# Syncrun started 2017-08-31T20:09:48
+#=#=#=#=# Propagation starts 2017-08-31T20:09:48 (last step: 146 msec, total: 146 msec)
+#=#=#=# Syncrun finished 2017-08-31T20:09:48 (last step: 128 msec, total: 275 msec)
+#=#=#=# Syncrun started 2017-08-31T20:58:09
+#=#=#=#=# Propagation starts 2017-08-31T20:58:09 (last step: 138 msec, total: 138 msec)
+#=#=#=# Syncrun finished 2017-08-31T20:58:09 (last step: 88 msec, total: 226 msec)
+#=#=#=# Syncrun started 2017-08-31T22:52:58
+#=#=#=#=# Propagation starts 2017-08-31T22:52:58 (last step: 145 msec, total: 145 msec)
+#=#=#=# Syncrun finished 2017-08-31T22:52:58 (last step: 79 msec, total: 225 msec)
+#=#=#=# Syncrun started 2017-08-31T23:12:15
+#=#=#=#=# Propagation starts 2017-08-31T23:12:16 (last step: 137 msec, total: 137 msec)
+#=#=#=# Syncrun finished 2017-08-31T23:12:16 (last step: 108 msec, total: 245 msec)
+#=#=#=# Syncrun started 2017-09-01T00:09:51
+#=#=#=#=# Propagation starts 2017-09-01T00:09:51 (last step: 406 msec, total: 406 msec)
+#=#=#=# Syncrun finished 2017-09-01T00:09:52 (last step: 110 msec, total: 516 msec)
+#=#=#=# Syncrun started 2017-09-01T02:09:55
+#=#=#=#=# Propagation starts 2017-09-01T02:09:55 (last step: 147 msec, total: 147 msec)
+#=#=#=# Syncrun finished 2017-09-01T02:09:55 (last step: 95 msec, total: 242 msec)
+#=#=#=# Syncrun started 2017-09-01T04:09:59
+#=#=#=#=# Propagation starts 2017-09-01T04:10:00 (last step: 149 msec, total: 149 msec)
+#=#=#=# Syncrun finished 2017-09-01T04:10:00 (last step: 89 msec, total: 239 msec)
+#=#=#=# Syncrun started 2017-09-01T06:10:00
+#=#=#=#=# Propagation starts 2017-09-01T06:10:00 (last step: 157 msec, total: 157 msec)
+#=#=#=# Syncrun finished 2017-09-01T06:10:00 (last step: 88 msec, total: 245 msec)
+#=#=#=# Syncrun started 2017-09-01T08:10:00
+#=#=#=#=# Propagation starts 2017-09-01T08:10:01 (last step: 144 msec, total: 144 msec)
+#=#=#=# Syncrun finished 2017-09-01T08:10:01 (last step: 87 msec, total: 231 msec)
