@@ -11,7 +11,7 @@ os.remove(getMudletHomeDir()..&quot;\Overgrowth&quot;)
 
 local saveto = getMudletHomeDir()..&quot;/Overgrowth&quot;
 
-local url = &quot;https://raw.githubusercontent.com/kenicam/Overgrowth-for-mudlet/master/Overgrowth.xml&quot;
+local url = &quot;https://raw.githubusercontent.com/kenicam/Overgrowth-for-mudlet/master/Overgrowth.trigger.xml&quot;
 downloadFile(saveto, url)
 cecho(&quot;&lt;white&gt;Downloading &lt;green&gt;&quot;..url..&quot;&lt;white&gt; to &lt;green&gt;&quot;..saveto..&quot;\n&quot;)</script>
             <command></command>
