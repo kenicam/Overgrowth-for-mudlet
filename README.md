@@ -9,7 +9,7 @@ It consists of two packages, Overgrowth it's self, and OgDownloader forupdating 
 
 https://github.com/kenicam/Overgrowth-for-mudlet
 
-You will need to unzip this folder somewhere and then import both files with the mudlet package manager, once installed do                      
+You will need to unzip this folder somewhere and then import both files with the mudlet package manager, once installed do
 'og update'
 
 This will reinstall the package after saving it to your profile's directory.                                                              
