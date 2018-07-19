@@ -1541,9 +1541,9 @@ ognote("Leader set to: "..ogleader)</script>
 	segtell("Targeting "..string.title(matches[2]))
 	target = string.title(matches[2])
 	ogquicktarget = string.title(matches[2])</script>
-			<command>^a (.+?)$</command>
+			<command></command>
 			<packageName></packageName>
-			<regex></regex>
+			<regex>^a (.+?)$</regex>
 		</Alias>
 	</AliasPackage>
 	<ActionPackage />
