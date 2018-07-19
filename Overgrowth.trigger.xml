@@ -1,1555 +1,1604 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MudletPackage>
 <MudletPackage version="1.001">
-    <TriggerPackage>
-        <TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-            <name>Leader</name>
-            <script></script>
-            <triggerType>0</triggerType>
-            <conditonLineDelta>0</conditonLineDelta>
-            <mStayOpen>0</mStayOpen>
-            <mCommand></mCommand>
-            <packageName></packageName>
-            <mFgColor>#ff0000</mFgColor>
-            <mBgColor>#ffff00</mBgColor>
-            <mSoundFile></mSoundFile>
-            <colorTriggerFgColor>#000000</colorTriggerFgColor>
-            <colorTriggerBgColor>#000000</colorTriggerBgColor>
-            <regexCodeList/>
-            <regexCodePropertyList/>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>Follow</name>
-                <script>if matches[2] == ogleader then
-ognote(&quot;FOLLOW &quot;..string.upper(matches[3]))
-ognote(&quot;'foll' to follow!&quot;)
+	<TriggerPackage>
+		<TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<name>Leader</name>
+			<script></script>
+			<triggerType>0</triggerType>
+			<conditonLineDelta>0</conditonLineDelta>
+			<mStayOpen>0</mStayOpen>
+			<mCommand></mCommand>
+			<packageName></packageName>
+			<mFgColor>#ff0000</mFgColor>
+			<mBgColor>#ffff00</mBgColor>
+			<mSoundFile></mSoundFile>
+			<colorTriggerFgColor>#000000</colorTriggerFgColor>
+			<colorTriggerBgColor>#000000</colorTriggerBgColor>
+			<regexCodeList />
+			<regexCodePropertyList />
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>Follow</name>
+				<script>if matches[2] == ogleader then
+ognote("FOLLOW "..string.upper(matches[3]))
+ognote("'foll' to follow!")
 end</script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>0</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>^\(.+?\)\:\s+(\w+) says\, \&quot;Follow me\.\&quot;</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-            </Trigger>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>Shield</name>
-                <script>if matches[2] == ogleader then
-ognote(&quot;SHIELD&quot;)
-ognote(&quot;SHIELD&quot;)
-ognote(&quot;SHIELD&quot;)
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^\(.+?\)\:\s+(\w+) says\, \"Follow me\.\"</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>Shield</name>
+				<script>if matches[2] == ogleader then
+ognote("SHIELD")
+ognote("SHIELD")
+ognote("SHIELD")
 end</script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>0</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>^\(.+?\)\:\s+(\w+) says\, \&quot;Shield\.\&quot;</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-            </Trigger>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>Got to room</name>
-                <script>leader_room = string.match(matches[3], &quot;(%d%d%d+)&quot;)
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^\(.+?\)\:\s+(\w+) says\, \"Shield\.\"</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>Got to room</name>
+				<script>if matches[2] == ogleader then
+leader_room = string.match(matches[3], "(%d%d%d+)")
 if leader_room then
-cechoLink(&quot;\n&lt;green&gt;&lt;GROUP UP, click to travel&gt;&quot;, [[send(&quot;path track &quot;..leader_room)]], &quot;GoTo&quot;, true )
-cechoLink(&quot;\n&lt;green&gt;&lt;GROUP UP, click to travel&gt;&quot;, [[send(&quot;path track &quot;..leader_room)]], &quot;GoTo&quot;, true )
-end</script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>0</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>^\(.+?\)\:\s+(\w+) says\, \&quot;(.+?)\&quot;</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-            </Trigger>
-        </TriggerGroup>
-        <TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-            <name>Discern</name>
-            <script></script>
-            <triggerType>0</triggerType>
-            <conditonLineDelta>0</conditonLineDelta>
-            <mStayOpen>0</mStayOpen>
-            <mCommand></mCommand>
-            <packageName></packageName>
-            <mFgColor>#ff0000</mFgColor>
-            <mBgColor>#ffff00</mBgColor>
-            <mSoundFile></mSoundFile>
-            <colorTriggerFgColor>#000000</colorTriggerFgColor>
-            <colorTriggerBgColor>#000000</colorTriggerBgColor>
-            <regexCodeList/>
-            <regexCodePropertyList/>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>Health</name>
-                <script>local percent = math.floor((100/tonumber(matches[3])) * tonumber(matches[2]))
-local width = math.floor((percent * 30) / 100)
-cecho(&quot;\n&lt;maroon&gt;&quot;..string.rep([[|]], width)..&quot;&lt;red&gt;&quot; ..string.rep(&quot;-&quot;, 30 - width)..&quot;&lt;slate_grey&gt; &quot;..percent..&quot;% health&quot;)</script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>0</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>^\w+'s health stands at (\d+)/(\d+)\.$</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-            </Trigger>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>Mana</name>
-                <script>local percent = math.floor((100/tonumber(matches[3])) * tonumber(matches[2]))
-local width = math.floor((percent * 30) / 100)
-cecho(&quot;\n&lt;blue&gt;&quot;..string.rep([[|]], width)..&quot;&lt;light_blue&gt;&quot; ..string.rep(&quot;-&quot;, 30 - width)..&quot;&lt;slate_grey&gt; &quot;..percent..&quot;% mana&quot;)</script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>0</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>^\w+'s mana stands at (\d+)/(\d+)\.$</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-            </Trigger>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>Ego</name>
-                <script>local percent = math.floor((100/tonumber(matches[3])) * tonumber(matches[2]))
-local width = math.floor((percent * 30) / 100)
-cecho(&quot;\n&lt;green&gt;&quot;..string.rep([[|]], width)..&quot;&lt;spring_green&gt;&quot; ..string.rep(&quot;-&quot;, 30 - width)..&quot;&lt;slate_grey&gt; &quot;..percent..&quot;% ego&quot;)</script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>0</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>^\w+'s ego stands at (\d+)/(\d+)\.$</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-            </Trigger>
-        </TriggerGroup>
-        <TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-            <name>Insta kills</name>
-            <script></script>
-            <triggerType>0</triggerType>
-            <conditonLineDelta>0</conditonLineDelta>
-            <mStayOpen>0</mStayOpen>
-            <mCommand></mCommand>
-            <packageName></packageName>
-            <mFgColor>#ff0000</mFgColor>
-            <mBgColor>#ffff00</mBgColor>
-            <mSoundFile></mSoundFile>
-            <colorTriggerFgColor>#000000</colorTriggerFgColor>
-            <colorTriggerBgColor>#000000</colorTriggerBgColor>
-            <regexCodeList/>
-            <regexCodePropertyList/>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>Toad</name>
-                <script>overgrow(string.upper(&quot;&quot;..matches[2])..&quot;  TOADED&quot;)
-overgrow(string.upper(&quot;&quot;..matches[2])..&quot;  TOADED&quot;)
-if matches[2] == string.lower(target) then
-segtell(&quot;&quot;..matches[2] ..&quot; has been toaded!&quot;)
-end</script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>0</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>^Deciding to teach ([A-Z][a-z]+) the ultimate lesson in manners\, you point a finger imperiously at [Hh](?:im|er) and call the curse of the toad down upon [Hh](?:is|er) head\. You watch in satisfaction as warts break out over [Hh](?:is|er) skin which then turns green and slimy\. Finally, [Ss]?[Hh]e shrinks and transforms into a large\, ugly toad\!$</string>
-                    <string>^Eyes flashing with anger\, [A-Z][a-z]+ points a finger imperiously at ([A-Z][a-z]+) and utters a series of guttural croaks\. You watch in amazement as warts break out over [A-Z][a-z]+\'s skin which then turns green and slimy\. Finally\, [Ss]?[Hh]e shrinks and transforms into a large\, ugly toad\!$</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-            </Trigger>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>You got toaded</name>
-                <script>cecho(&quot;\n&lt;purple&gt;+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=[OVERGROWTH]=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+&quot;)
-cecho(&quot;\n&lt;purple&gt;&quot;)
-cecho(&quot;\n&lt;purple&gt;TOADED TOADED TOADED TOADED TOADED TOADED TOADED TOADED TOADED TOADED&quot;)
-cecho(&quot;\n&lt;purple&gt;TOADED TOADED TOADED TOADED TOADED TOADED TOADED TOADED TOADED TOADED&quot;)
-cecho(&quot;\n&lt;purple&gt;TOADED TOADED TOADED TOADED TOADED TOADED TOADED TOADED TOADED TOADED&quot;)
-cecho(&quot;\n&lt;purple&gt;TOADED TOADED TOADED TOADED TOADED TOADED TOADED TOADED TOADED TOADED&quot;)
-cecho(&quot;\n&lt;purple&gt;&quot;)
-cecho(&quot;\n&lt;purple&gt;+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=[OVERGROWTH]=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+&quot;)</script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>0</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>^Eyes flashing with anger\, [A-Z][a-z]+ points a finger imperiously at you and utters a series of guttural croaks\. A strange thrumming fills your stomach\, and you watch in horror as warts break out over your skin which then turns green and slimy\. The world seems to suddenly become much larger\.\.\.or are you becoming smaller\? Hmm\, why do you have a sudden craving for flies\?$</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-            </Trigger>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>Decap</name>
-                <script>OGcaution(matches[2],&quot;started DECAPITATE&quot;)
-segtell(string.upper(&quot;&quot;..matches[2])..&quot; has begun a DECAPITATE&quot;)
-ogquicktarget = stringlower(&quot;&quot;..matches[2])
-ognote(&quot;Quicktarget set to &quot;..matches[2])</script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>0</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>^([A-Z][a-z]+) raises .*? over [Hh](?:is|er) head and begins to swing it in a wide circle\, gaining speed as [Ss]?[Hh]e goes\.$</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-            </Trigger>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>Decap2</name>
-                <script>OGwarning(matches[2],&quot;DECAPITATING &quot;..matches[3]..&quot;! VINE WEB or GUST!!&quot;)
-segtell(string.upper(&quot;&quot;..matches[2])..&quot; has DECAPITATE on &quot;..string.upper(&quot;&quot;..matches[2])..&quot;!&quot;)
-ogquicktarget = string.lower(&quot;&quot;..matches[2])
-ognote(&quot;Quicktarget set to &quot;..matches[2])</script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>0</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>^([A-Z][a-z]+) begins to bear down on ([A-Z][a-z]+)\, whirling .*?\.$</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-            </Trigger>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>Decap you</name>
-                <script>cecho(&quot;\n&lt;red&gt;+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=[OVERGROWTH]=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+&quot;)
-cecho(&quot;\n&lt;red&gt;&quot;)
-cecho(&quot;\n&lt;red&gt;DECAP DECAP DECAP DECAP DECAP DECAP DECAP DECAP DECAP DECAP DECAP DECAP&quot;)
-cecho(&quot;\n&lt;red&gt;DECAP DECAP DECAP DECAP DECAP DECAP DECAP DECAP DECAP DECAP DECAP DECAP&quot;)
-cecho(&quot;\n&lt;red&gt;DECAP DECAP DECAP DECAP DECAP DECAP DECAP DECAP DECAP DECAP DECAP DECAP&quot;)
-cecho(&quot;\n&lt;red&gt;DECAP DECAP DECAP DECAP DECAP DECAP DECAP DECAP DECAP DECAP DECAP DECAP&quot;)
-cecho(&quot;\n&lt;red&gt;&quot;)
-cecho(&quot;\n&lt;red&gt;+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=[OVERGROWTH]=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+&quot;)</script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>0</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>^([A-Z][a-z]+) begins to bear down on you\, whirling .*?\.$</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-            </Trigger>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>Soulless</name>
-                <script>if matches[3] == &quot;you&quot; then
-cecho(&quot;\n&lt;red&gt;+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=[OVERGROWTH]=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+&quot;)
-cecho(&quot;\n&lt;red&gt;&quot;)
-cecho(&quot;\n&lt;red&gt;SOULLESS SOULLESS SOULLESS SOULLESS SOULLESS SOULLESS SOULLESS SOULLESS&quot;)
-cecho(&quot;\n&lt;red&gt;SOULLESS SOULLESS SOULLESS SOULLESS SOULLESS SOULLESS SOULLESS SOULLESS&quot;)
-cecho(&quot;\n&lt;red&gt;SOULLESS SOULLESS SOULLESS SOULLESS SOULLESS SOULLESS SOULLESS SOULLESS&quot;)
-cecho(&quot;\n&lt;red&gt;SOULLESS SOULLESS SOULLESS SOULLESS SOULLESS SOULLESS SOULLESS SOULLESS&quot;)
-cecho(&quot;\n&lt;red&gt;&quot;)
-cecho(&quot;\n&lt;red&gt;+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=[OVERGROWTH]=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+&quot;)
-else
- OGwarning(matches[2],&quot;SOULLESS.&quot;)
- segtell(string.upper(&quot;&quot;..matches[2])..&quot; has SOULLESS on &quot;..matches[3]..&quot;.&quot;)
-ogquicktarget = string.lower(&quot;&quot;..matches[2])
- ognote(&quot;Quicktarget set to &quot;..matches[2]) 
-end</script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>0</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>^([A-Z][a-z]+) flings a tarot card at (\w+) and upon impact\, it disappears\. An ominous silence overtakes your surroundings\.$</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-            </Trigger>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>Chasm</name>
-                <script>cecho(&quot;&lt;yellow&gt;+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=[OVERGROWTH]=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+&quot;)
-cecho(&quot;&lt;yellow&gt;&quot;)
-cecho(&quot;&lt;yellow&gt;CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM&quot;)
-cecho(&quot;&lt;yellow&gt;CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM&quot;)
-cecho(&quot;&lt;yellow&gt;CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM&quot;)
-cecho(&quot;&lt;yellow&gt;CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM&quot;)
-cecho(&quot;&lt;yellow&gt;&quot;)
-cecho(&quot;&lt;yellow&gt;+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=[OVERGROWTH]=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+&quot;)</script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>0</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>^([A-Z][a-z]+) points at the tainted earth beneath your feet\, snarling with a look of madness on [Hh](?:is|er) face\. The ground begins to tremble\.$</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-            </Trigger>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>Chasm2</name>
-                <script>cecho(&quot;&lt;red&gt;+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=[OVERGROWTH]=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+&quot;)
-cecho(&quot;&lt;red&gt;&quot;)
-cecho(&quot;&lt;red&gt;CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM&quot;)
-cecho(&quot;&lt;red&gt;CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM&quot;)
-cecho(&quot;&lt;red&gt;CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM&quot;)
-cecho(&quot;&lt;red&gt;CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM&quot;)
-cecho(&quot;&lt;red&gt;&quot;)
-cecho(&quot;&lt;red&gt;+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=[OVERGROWTH]=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+&quot;)</script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>0</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>^([A-Z][a-z]+)\'s finger trembles and [Ss]?[Hh]e bares [Hh](?:is|er) teeth in a hideous grimace\. A small crack appears in the ground beneath you\!$</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-            </Trigger>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>Judge</name>
-                <script>OGwarning(matches[2],&quot;JUDGING.&quot;)
-segtell(string.upper(&quot;&quot;..matches[2])..&quot; is JUDGING &quot;..matches[3]..&quot;.&quot;)
-ogquicktarget = string.lower(matches[3])
-ognote(&quot;Quicktarget set to &quot;..matches[3])</script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>0</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>^([A-Z][a-z]+) calls down a beam of brilliant light upon (\w+)\.$</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-            </Trigger>
-        </TriggerGroup>
-        <TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-            <name>Target Moved</name>
-            <script></script>
-            <triggerType>0</triggerType>
-            <conditonLineDelta>0</conditonLineDelta>
-            <mStayOpen>0</mStayOpen>
-            <mCommand></mCommand>
-            <packageName></packageName>
-            <mFgColor>#ff0000</mFgColor>
-            <mBgColor>#ffff00</mBgColor>
-            <mSoundFile></mSoundFile>
-            <colorTriggerFgColor>#000000</colorTriggerFgColor>
-            <colorTriggerBgColor>#000000</colorTriggerBgColor>
-            <regexCodeList/>
-            <regexCodePropertyList/>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>highjumped</name>
-                <script>OGcaution(&quot;%2&quot;,&quot;HIGHJUMPED&quot;)</script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>0</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>^([A-Z][a-z]+) crouches low to the ground and stares at the sky\, suddenly leaping up above as [Ss]?[Hh]e grabs ([A-Z][a-z]+) flying overhead\, flinging [Hh](?:im|er) towards the ground\.$</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-            </Trigger>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>highjump2</name>
-                <script>OGcaution(&quot;&quot;..matches[2],&quot;HIGHJUMPED&quot;)
-segtell(string.upper(&quot;&quot;..matches[2])..&quot; was HIGHJUMPED.&quot;)</script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>0</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>^Discerning ([A-Z][a-z]+) flying high above\, you lie in wait until [Ss]?[Hh]e is directly overhead before jumping high into the air and grabbing firmly onto [Hh](?:is|er) torso\. A look of surprise crosses [Hh](?:is|er) features as you fling [Hh](?:im|er) forcefully at the ground\.$</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-            </Trigger>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>spring trap</name>
-                <script>overgrow(&quot;&quot;..matches[2]..&quot; flung in! QT to target!!&quot;,&quot;cyan&quot;)
-ogquicktarget = matches[2]</script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>0</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>^([A-Z][a-z]+) comes arcing into the room and lands with a loud thump\.$</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-            </Trigger>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>p5</name>
-                <script>OGcaution(&quot;%1&quot;,&quot;PFIFTHED!!! BLANKNOTE or HINDER&quot;)</script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>0</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>^([A-Z][a-z]+) gazes longingly at (\w+)\.$</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-            </Trigger>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>Squall</name>
-                <script>if matches[2] == &quot;west&quot; then
-   dir = &quot;east&quot;
-elseif matches[2] == &quot;northwest&quot; then
-   dir = &quot;southeast&quot;
-elseif matches[2] == &quot;north&quot; then
-   dir = &quot;south&quot;
-elseif matches[2] == &quot;northeast&quot; then
-   dir = &quot;southwest&quot;
-elseif matches[2] == &quot;east&quot; then
-   dir = &quot;west&quot;
-elseif matches[2] == &quot;southeast&quot; then
-   dir = &quot;northwest&quot;
-elseif matches[2] == &quot;south&quot; then
-   dir = &quot;north&quot;
-elseif matches[2] == &quot;southwest&quot; then
-   dir = &quot;northeast&quot;
-elseif matches[2] == &quot;in&quot; then
-   dir = &quot;out&quot;
-elseif matches[2] == &quot;out&quot; then
-   dir = &quot;in&quot;
-elseif matches[2] == &quot;up&quot; then
-   dir = &quot;down&quot;
-elseif matches[2] == &quot;down&quot; then
-   dir = &quot;up&quot;
-else
-   dir = &quot;back&quot;
+cechoLink("\n&lt;green&gt;&lt;GROUP UP, click to travel&gt;", [[send("path walk "..leader_room)]], "GoTo", true )
+cechoLink("\n&lt;green&gt;&lt;GROUP UP, click to travel&gt;", [[send("path walk "..leader_room)]], "GoTo", true )
 end
-overgrow(&quot;SQUALLED!!! GO &quot;..string.upper(dir)..&quot;! GO &quot;..string.upper(dir)..&quot;! GO &quot;..string.upper(dir)..&quot;!&quot;, &quot;yellow&quot;)</script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>0</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>^The foul wind picks you up and hurls you to the (\w+)\.$</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-            </Trigger>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>Seized</name>
-                <script>if is_target(matches[2]) then
-overgrow(&quot;Target gone: Seized. CLIMB UP! CLIMB UP!&quot;)
 end</script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>0</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>^[A-Z][a-z]+ locks [Hh](?:is|er) arms around ([A-Z][a-z]+) and the two vanish up and out of sight\.$</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-            </Trigger>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>Seized2</name>
-                <script>if is_target(matches[2]) then
-overgrow(&quot;Target returned: Seized&quot;)
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^\(.+?\)\:\s+(\w+) says\, \"(.+?)\"</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+		</TriggerGroup>
+		<TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<name>Discern</name>
+			<script></script>
+			<triggerType>0</triggerType>
+			<conditonLineDelta>0</conditonLineDelta>
+			<mStayOpen>0</mStayOpen>
+			<mCommand></mCommand>
+			<packageName></packageName>
+			<mFgColor>#ff0000</mFgColor>
+			<mBgColor>#ffff00</mBgColor>
+			<mSoundFile></mSoundFile>
+			<colorTriggerFgColor>#000000</colorTriggerFgColor>
+			<colorTriggerBgColor>#000000</colorTriggerBgColor>
+			<regexCodeList />
+			<regexCodePropertyList />
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>Health</name>
+				<script>local percent = math.floor((100/tonumber(matches[3])) * tonumber(matches[2]))
+local width = math.floor((percent * 30) / 100)
+cecho("\n&lt;maroon&gt;"..string.rep([[|]], width).."&lt;red&gt;" ..string.rep("-", 30 - width).."&lt;slate_grey&gt; "..percent.."% health")</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^\w+'s health stands at (\d+)/(\d+)\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>Mana</name>
+				<script>local percent = math.floor((100/tonumber(matches[3])) * tonumber(matches[2]))
+local width = math.floor((percent * 30) / 100)
+cecho("\n&lt;blue&gt;"..string.rep([[|]], width).."&lt;light_blue&gt;" ..string.rep("-", 30 - width).."&lt;slate_grey&gt; "..percent.."% mana")</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^\w+'s mana stands at (\d+)/(\d+)\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>Ego</name>
+				<script>local percent = math.floor((100/tonumber(matches[3])) * tonumber(matches[2]))
+local width = math.floor((percent * 30) / 100)
+cecho("\n&lt;green&gt;"..string.rep([[|]], width).."&lt;spring_green&gt;" ..string.rep("-", 30 - width).."&lt;slate_grey&gt; "..percent.."% ego")</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^\w+'s ego stands at (\d+)/(\d+)\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+		</TriggerGroup>
+		<TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<name>Insta kills</name>
+			<script></script>
+			<triggerType>0</triggerType>
+			<conditonLineDelta>0</conditonLineDelta>
+			<mStayOpen>0</mStayOpen>
+			<mCommand></mCommand>
+			<packageName></packageName>
+			<mFgColor>#ff0000</mFgColor>
+			<mBgColor>#ffff00</mBgColor>
+			<mSoundFile></mSoundFile>
+			<colorTriggerFgColor>#000000</colorTriggerFgColor>
+			<colorTriggerBgColor>#000000</colorTriggerBgColor>
+			<regexCodeList />
+			<regexCodePropertyList />
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>Toad</name>
+				<script>overgrow(string.upper(""..matches[2]).."  TOADED")
+overgrow(string.upper(""..matches[2]).."  TOADED")
+if matches[2] == string.lower(target) then
+segtell(""..matches[2] .." has been toaded!")
 end</script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>0</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>^[A-Z][a-z]+ swings down below the canopy and re\-emerges with [Hh](?:is|er) arms clasped around ([A-Z][a-z]+)\.$</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-            </Trigger>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>Seized3</name>
-                <script>overgrow(&quot;&quot;..matches[2]..&quot; SEIZED!!&quot;)</script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>0</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>^Your arms lock themselves about ([A-Z][a-z]+) and you hoist [Hh](?:im|er)\, legs kicking wildly\, up into the treetops\.$</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-            </Trigger>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>Shove</name>
-                <script>if is_target(matches[2]) then
-overgrow(&quot;Target gone: Shoved. CLIMB DOWN! CLIMB DOWN!&quot;)
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^Deciding to teach ([A-Z][a-z]+) the ultimate lesson in manners\, you point a finger imperiously at [Hh](?:im|er) and call the curse of the toad down upon [Hh](?:is|er) head\. You watch in satisfaction as warts break out over [Hh](?:is|er) skin which then turns green and slimy\. Finally, [Ss]?[Hh]e shrinks and transforms into a large\, ugly toad\!$</string>
+					<string>^Eyes flashing with anger\, [A-Z][a-z]+ points a finger imperiously at ([A-Z][a-z]+) and utters a series of guttural croaks\. You watch in amazement as warts break out over [A-Z][a-z]+\'s skin which then turns green and slimy\. Finally\, [Ss]?[Hh]e shrinks and transforms into a large\, ugly toad\!$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>You got toaded</name>
+				<script>cecho("\n&lt;purple&gt;+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=[OVERGROWTH]=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+")
+cecho("\n&lt;purple&gt;")
+cecho("\n&lt;purple&gt;TOADED TOADED TOADED TOADED TOADED TOADED TOADED TOADED TOADED TOADED")
+cecho("\n&lt;purple&gt;TOADED TOADED TOADED TOADED TOADED TOADED TOADED TOADED TOADED TOADED")
+cecho("\n&lt;purple&gt;TOADED TOADED TOADED TOADED TOADED TOADED TOADED TOADED TOADED TOADED")
+cecho("\n&lt;purple&gt;TOADED TOADED TOADED TOADED TOADED TOADED TOADED TOADED TOADED TOADED")
+cecho("\n&lt;purple&gt;")
+cecho("\n&lt;purple&gt;+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=[OVERGROWTH]=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+")</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^Eyes flashing with anger\, [A-Z][a-z]+ points a finger imperiously at you and utters a series of guttural croaks\. A strange thrumming fills your stomach\, and you watch in horror as warts break out over your skin which then turns green and slimy\. The world seems to suddenly become much larger\.\.\.or are you becoming smaller\? Hmm\, why do you have a sudden craving for flies\?$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>Decap</name>
+				<script>OGcaution(matches[2],"started DECAPITATE")
+segtell(string.upper(""..matches[2]).." has begun a DECAPITATE")
+ogquicktarget = stringlower(""..matches[2])
+ognote("Quicktarget set to "..matches[2])</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^([A-Z][a-z]+) raises .*? over [Hh](?:is|er) head and begins to swing it in a wide circle\, gaining speed as [Ss]?[Hh]e goes\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>Decap2</name>
+				<script>OGwarning(matches[2],"DECAPITATING "..matches[3].."! VINE WEB or GUST!!")
+segtell(string.upper(""..matches[2]).." has DECAPITATE on "..string.upper(""..matches[2]).."!")
+ogquicktarget = string.lower(""..matches[2])
+ognote("Quicktarget set to "..matches[2])</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^([A-Z][a-z]+) begins to bear down on ([A-Z][a-z]+)\, whirling .*?\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>Decap you</name>
+				<script>cecho("\n&lt;red&gt;+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=[OVERGROWTH]=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+")
+cecho("\n&lt;red&gt;")
+cecho("\n&lt;red&gt;DECAP DECAP DECAP DECAP DECAP DECAP DECAP DECAP DECAP DECAP DECAP DECAP")
+cecho("\n&lt;red&gt;DECAP DECAP DECAP DECAP DECAP DECAP DECAP DECAP DECAP DECAP DECAP DECAP")
+cecho("\n&lt;red&gt;DECAP DECAP DECAP DECAP DECAP DECAP DECAP DECAP DECAP DECAP DECAP DECAP")
+cecho("\n&lt;red&gt;DECAP DECAP DECAP DECAP DECAP DECAP DECAP DECAP DECAP DECAP DECAP DECAP")
+cecho("\n&lt;red&gt;")
+cecho("\n&lt;red&gt;+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=[OVERGROWTH]=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+")</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^([A-Z][a-z]+) begins to bear down on you\, whirling .*?\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>Soulless</name>
+				<script>if matches[3] == "you" then
+cecho("\n&lt;red&gt;+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=[OVERGROWTH]=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+")
+cecho("\n&lt;red&gt;")
+cecho("\n&lt;red&gt;SOULLESS SOULLESS SOULLESS SOULLESS SOULLESS SOULLESS SOULLESS SOULLESS")
+cecho("\n&lt;red&gt;SOULLESS SOULLESS SOULLESS SOULLESS SOULLESS SOULLESS SOULLESS SOULLESS")
+cecho("\n&lt;red&gt;SOULLESS SOULLESS SOULLESS SOULLESS SOULLESS SOULLESS SOULLESS SOULLESS")
+cecho("\n&lt;red&gt;SOULLESS SOULLESS SOULLESS SOULLESS SOULLESS SOULLESS SOULLESS SOULLESS")
+cecho("\n&lt;red&gt;")
+cecho("\n&lt;red&gt;+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=[OVERGROWTH]=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+")
+else
+ OGwarning(matches[2],"SOULLESS.")
+ segtell(string.upper(""..matches[2]).." has SOULLESS on "..matches[3]..".")
+ogquicktarget = string.lower(""..matches[2])
+ ognote("Quicktarget set to "..matches[2]) 
 end</script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>0</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>^[A-Z][a-z]+ gives a vicious shove to ([A-Z][a-z]+)\, who falls backwards through the tree branches\.$</string>
-                    <string>^You give ([A-Z][a-z]+) a vicious shove and watch in satisfaction as [Ss]?[Hh]e suffers a horrible fall\.$</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-            </Trigger>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>Levitate</name>
-                <script>if is_target(matches[2]) then
-overgrow(&quot;Target returned: Levitating&quot;)
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^([A-Z][a-z]+) flings a tarot card at (\w+) and upon impact\, it disappears\. An ominous silence overtakes your surroundings\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>Chasm</name>
+				<script>cecho("&lt;yellow&gt;+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=[OVERGROWTH]=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+")
+cecho("&lt;yellow&gt;")
+cecho("&lt;yellow&gt;CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM")
+cecho("&lt;yellow&gt;CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM")
+cecho("&lt;yellow&gt;CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM")
+cecho("&lt;yellow&gt;CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM")
+cecho("&lt;yellow&gt;")
+cecho("&lt;yellow&gt;+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=[OVERGROWTH]=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+")</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^([A-Z][a-z]+) points at the tainted earth beneath your feet\, snarling with a look of madness on [Hh](?:is|er) face\. The ground begins to tremble\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>Chasm2</name>
+				<script>cecho("&lt;red&gt;+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=[OVERGROWTH]=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+")
+cecho("&lt;red&gt;")
+cecho("&lt;red&gt;CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM")
+cecho("&lt;red&gt;CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM")
+cecho("&lt;red&gt;CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM")
+cecho("&lt;red&gt;CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM CHASM")
+cecho("&lt;red&gt;")
+cecho("&lt;red&gt;+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=[OVERGROWTH]=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+")</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^([A-Z][a-z]+)\'s finger trembles and [Ss]?[Hh]e bares [Hh](?:is|er) teeth in a hideous grimace\. A small crack appears in the ground beneath you\!$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>Judge</name>
+				<script>OGwarning(matches[2],"JUDGING.")
+segtell(string.upper(""..matches[2]).." is JUDGING "..matches[3]..".")
+ogquicktarget = string.lower(matches[3])
+ognote("Quicktarget set to "..matches[3])</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^([A-Z][a-z]+) calls down a beam of brilliant light upon (\w+)\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+		</TriggerGroup>
+		<TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<name>Target Moved</name>
+			<script></script>
+			<triggerType>0</triggerType>
+			<conditonLineDelta>0</conditonLineDelta>
+			<mStayOpen>0</mStayOpen>
+			<mCommand></mCommand>
+			<packageName></packageName>
+			<mFgColor>#ff0000</mFgColor>
+			<mBgColor>#ffff00</mBgColor>
+			<mSoundFile></mSoundFile>
+			<colorTriggerFgColor>#000000</colorTriggerFgColor>
+			<colorTriggerBgColor>#000000</colorTriggerBgColor>
+			<regexCodeList />
+			<regexCodePropertyList />
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>highjumped</name>
+				<script>OGcaution("%2","HIGHJUMPED")</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^([A-Z][a-z]+) crouches low to the ground and stares at the sky\, suddenly leaping up above as [Ss]?[Hh]e grabs ([A-Z][a-z]+) flying overhead\, flinging [Hh](?:im|er) towards the ground\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>highjump2</name>
+				<script>OGcaution(""..matches[2],"HIGHJUMPED")
+segtell(string.upper(""..matches[2]).." was HIGHJUMPED.")</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^Discerning ([A-Z][a-z]+) flying high above\, you lie in wait until [Ss]?[Hh]e is directly overhead before jumping high into the air and grabbing firmly onto [Hh](?:is|er) torso\. A look of surprise crosses [Hh](?:is|er) features as you fling [Hh](?:im|er) forcefully at the ground\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>spring trap</name>
+				<script>overgrow(""..matches[2].." flung in! QT to target!!","cyan")
+ogquicktarget = matches[2]</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^([A-Z][a-z]+) comes arcing into the room and lands with a loud thump\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>p5</name>
+				<script>OGcaution("%1","PFIFTHED!!! BLANKNOTE or HINDER")</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^([A-Z][a-z]+) gazes longingly at (\w+)\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>Squall</name>
+				<script>if matches[2] == "west" then
+   dir = "east"
+elseif matches[2] == "northwest" then
+   dir = "southeast"
+elseif matches[2] == "north" then
+   dir = "south"
+elseif matches[2] == "northeast" then
+   dir = "southwest"
+elseif matches[2] == "east" then
+   dir = "west"
+elseif matches[2] == "southeast" then
+   dir = "northwest"
+elseif matches[2] == "south" then
+   dir = "north"
+elseif matches[2] == "southwest" then
+   dir = "northeast"
+elseif matches[2] == "in" then
+   dir = "out"
+elseif matches[2] == "out" then
+   dir = "in"
+elseif matches[2] == "up" then
+   dir = "down"
+elseif matches[2] == "down" then
+   dir = "up"
+else
+   dir = "back"
+end
+overgrow("SQUALLED!!! GO "..string.upper(dir).."! GO "..string.upper(dir).."! GO "..string.upper(dir).."!", "yellow")</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^The foul wind picks you up and hurls you to the (\w+)\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>Seized</name>
+				<script>if is_target(matches[2]) then
+overgrow("Target gone: Seized. CLIMB UP! CLIMB UP!")
 end</script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>0</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>^([A-Z][a-z]+) gently floats to the ground\.$</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-            </Trigger>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>Climb</name>
-                <script>if is_target(matches[2]) then
-overgrow(&quot;Target gone: Trees. CLIMB UP! CLIMB UP!&quot;)
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^[A-Z][a-z]+ locks [Hh](?:is|er) arms around ([A-Z][a-z]+) and the two vanish up and out of sight\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>Seized2</name>
+				<script>if is_target(matches[2]) then
+overgrow("Target returned: Seized")
 end</script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>0</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>^([A-Z][a-z]+) reaches up and grabs a sturdy branch\, then pulls [Hh](?:im|er)self up and disappears into the treetops\.$</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-            </Trigger>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>climb2</name>
-                <script>if is_target(matches[2]) then
-overgrow(&quot;Target returned: Climbed down&quot;)
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^[A-Z][a-z]+ swings down below the canopy and re\-emerges with [Hh](?:is|er) arms clasped around ([A-Z][a-z]+)\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>Seized3</name>
+				<script>overgrow(""..matches[2].." SEIZED!!")</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^Your arms lock themselves about ([A-Z][a-z]+) and you hoist [Hh](?:im|er)\, legs kicking wildly\, up into the treetops\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>Shove</name>
+				<script>if is_target(matches[2]) then
+overgrow("Target gone: Shoved. CLIMB DOWN! CLIMB DOWN!")
 end</script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>0</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>^([A-Z][a-z]+) clambers down from a nearby vantage point in the treetops\.$</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-            </Trigger>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>Treelife</name>
-                <script>if is_target(matches[2]) then
-overgrow(&quot;Target caught by Treelife!&quot;)
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^[A-Z][a-z]+ gives a vicious shove to ([A-Z][a-z]+)\, who falls backwards through the tree branches\.$</string>
+					<string>^You give ([A-Z][a-z]+) a vicious shove and watch in satisfaction as [Ss]?[Hh]e suffers a horrible fall\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>Levitate</name>
+				<script>if is_target(matches[2]) then
+overgrow("Target returned: Levitating")
 end</script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>0</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>^Animated branches from the trees above suddenly reach down and clutch ([A-Z][a-z]+)(?:\, riding .+?\,)? around the waist\, pulling [hH](?:im|er) into their foliage\.$</string>
-                    <string>^Branches swoop down and lift ([A-Z][a-z]+) up into the trees\.$</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-            </Trigger>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>Treebane</name>
-                <script>if is_target(matches[2]) then
-overgrow(&quot;Target gone: Treebane. CLIMB DOWN! CLIMB DOWN!&quot;)
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^([A-Z][a-z]+) gently floats to the ground\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>Climb</name>
+				<script>if is_target(matches[2]) then
+overgrow("Target gone: Trees. CLIMB UP! CLIMB UP!")
 end</script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>0</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>^The bough that ([A-Z][a-z]+) is standing on suddenly tilts and branches forcibly hurl him out of the tree\, sending him tumbling to the forest floor\.$</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-            </Trigger>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>Tree fall</name>
-                <script>if is_target(matches[2]) then
-overgrow(&quot;Target gone: Tree fall. CLIMB DOWN! CLIMB DOWN!&quot;)
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^([A-Z][a-z]+) reaches up and grabs a sturdy branch\, then pulls [Hh](?:im|er)self up and disappears into the treetops\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>climb2</name>
+				<script>if is_target(matches[2]) then
+overgrow("Target returned: Climbed down")
 end</script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>0</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>^([A-Z][a-z]+) is suddenly rocked by a strong gust of wind\, and falls head first to the ground\.$</string>
-                    <string>^([A-Z][a-z]+) is blown\, flailing\, out of the tree\.$</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-            </Trigger>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>Tumble somersault roll</name>
-                <script>if is_target(matches[2]) then
-	if string.find(matches[3], &quot;tumble&quot;) then
-overgrow(&quot;&quot;..matches[2]..&quot; is tumbling &quot;..matches[4], &quot;cyan&quot;)
-segtell(&quot;&quot;..matches[2] ..&quot; is tumbling &quot;..matches[4]..&quot;!&quot;)
-	elseif string.find(matches[3], &quot;somersault&quot;) then
-overgrow(&quot;&quot;..matches[2]..&quot; is somersaulting &quot;..matches[4], &quot;cyan&quot;)
-segtell(&quot;&quot;..matches[2] ..&quot; is somersaulting &quot;..matches[4]..&quot;!&quot;)
-	elseif string.find(matches[3], &quot;roll&quot;) then
-overgrow(&quot;&quot;..matches[2]..&quot; is rolling &quot;..matches[4], &quot;cyan&quot;)
-segtell(&quot;&quot;..matches[2] ..&quot; is rolling &quot;..matches[4]..&quot;!&quot;)
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^([A-Z][a-z]+) clambers down from a nearby vantage point in the treetops\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>Treelife</name>
+				<script>if is_target(matches[2]) then
+overgrow("Target caught by Treelife!")
+end</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^Animated branches from the trees above suddenly reach down and clutch ([A-Z][a-z]+)(?:\, riding .+?\,)? around the waist\, pulling [hH](?:im|er) into their foliage\.$</string>
+					<string>^Branches swoop down and lift ([A-Z][a-z]+) up into the trees\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>Treebane</name>
+				<script>if is_target(matches[2]) then
+overgrow("Target gone: Treebane. CLIMB DOWN! CLIMB DOWN!")
+end</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^The bough that ([A-Z][a-z]+) is standing on suddenly tilts and branches forcibly hurl him out of the tree\, sending him tumbling to the forest floor\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>Tree fall</name>
+				<script>if is_target(matches[2]) then
+overgrow("Target gone: Tree fall. CLIMB DOWN! CLIMB DOWN!")
+end</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^([A-Z][a-z]+) is suddenly rocked by a strong gust of wind\, and falls head first to the ground\.$</string>
+					<string>^([A-Z][a-z]+) is blown\, flailing\, out of the tree\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>Tumble somersault roll</name>
+				<script>if is_target(matches[2]) then
+	if string.find(matches[3], "tumble") then
+overgrow(""..matches[2].." is tumbling "..matches[4], "cyan")
+segtell(""..matches[2] .." is tumbling "..matches[4].."!")
+	elseif string.find(matches[3], "somersault") then
+overgrow(""..matches[2].." is somersaulting "..matches[4], "cyan")
+segtell(""..matches[2] .." is somersaulting "..matches[4].."!")
+	elseif string.find(matches[3], "roll") then
+overgrow(""..matches[2].." is rolling "..matches[4], "cyan")
+segtell(""..matches[2] .." is rolling "..matches[4].."!")
 	end
 end</script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>0</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>^([A-Z][a-z]+) (begins to tumble towards|prepares to somersault to|begins to roll towards) the (\w+)\.$</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-            </Trigger>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>Tumbled out</name>
-                <script>if is_target(matches[2]) then
-overgrow(&quot;Target gone: Tumbled &quot;..string.upper(&quot;%2&quot;)..&quot;!&quot;,&quot;cyan&quot;)
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^([A-Z][a-z]+) (begins to tumble towards|prepares to somersault to|begins to roll towards) the (\w+)\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>Tumbled out</name>
+				<script>if is_target(matches[2]) then
+overgrow("Target gone: Tumbled "..string.upper("%2").."!","cyan")
 end</script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>0</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>^([A-Z][a-z]+) tumbles out to the (\w+)\.$</string>
-                    <string>^([A-Z][a-z]+) jumps up and tucks [hH](?:im|er)self into a somersault\, diving past obstructions to the (\w+)\.$</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-            </Trigger>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>rad out</name>
-                <script>if is_target(matches[2]) then
-overgrow(&quot;Target gone: RAD RUNE&quot;)
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^([A-Z][a-z]+) tumbles out to the (\w+)\.$</string>
+					<string>^([A-Z][a-z]+) jumps up and tucks [hH](?:im|er)self into a somersault\, diving past obstructions to the (\w+)\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>rad out</name>
+				<script>if is_target(matches[2]) then
+overgrow("Target gone: RAD RUNE")
 end</script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>0</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>^Blinking in astonishment\, ([A-Z][a-z]+) disappears in a flash of light\.$</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-            </Trigger>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>rad in</name>
-                <script>if is_target(matches[2]) then
-overgrow(&quot;Target returned: RAD RUNE&quot;)
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^Blinking in astonishment\, ([A-Z][a-z]+) disappears in a flash of light\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>rad in</name>
+				<script>if is_target(matches[2]) then
+overgrow("Target returned: RAD RUNE")
 end</script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>0</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>^(\w+) appears in a flash of light\, blinking in astonishment\.$</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-            </Trigger>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>Willowisp</name>
-                <script>if is_target(matches[2]) then
-overgrow(&quot;Target returned: Willowisp&quot;)
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^(\w+) appears in a flash of light\, blinking in astonishment\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>Willowisp</name>
+				<script>if is_target(matches[2]) then
+overgrow("Target returned: Willowisp")
 end</script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>0</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>^The willowisp returns with (\w+) following closely behind it\, and slowly fades from sight\.$</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-            </Trigger>
-        </TriggerGroup>
-        <TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-            <name>Sap</name>
-            <script></script>
-            <triggerType>0</triggerType>
-            <conditonLineDelta>0</conditonLineDelta>
-            <mStayOpen>0</mStayOpen>
-            <mCommand></mCommand>
-            <packageName></packageName>
-            <mFgColor>#ff0000</mFgColor>
-            <mBgColor>#ffff00</mBgColor>
-            <mSoundFile></mSoundFile>
-            <colorTriggerFgColor>#000000</colorTriggerFgColor>
-            <colorTriggerBgColor>#000000</colorTriggerBgColor>
-            <regexCodeList/>
-            <regexCodePropertyList/>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>sap</name>
-                <script>local who = matches[2]
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^The willowisp returns with (\w+) following closely behind it\, and slowly fades from sight\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+		</TriggerGroup>
+		<TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<name>Sap</name>
+			<script></script>
+			<triggerType>0</triggerType>
+			<conditonLineDelta>0</conditonLineDelta>
+			<mStayOpen>0</mStayOpen>
+			<mCommand></mCommand>
+			<packageName></packageName>
+			<mFgColor>#ff0000</mFgColor>
+			<mBgColor>#ffff00</mBgColor>
+			<mSoundFile></mSoundFile>
+			<colorTriggerFgColor>#000000</colorTriggerFgColor>
+			<colorTriggerBgColor>#000000</colorTriggerBgColor>
+			<regexCodeList />
+			<regexCodePropertyList />
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>sap</name>
+				<script>local who = matches[2]
 local sapped = matches[3]
-segtell(&quot;&quot;..who..&quot; sapped &quot;..sapped..&quot;!&quot;)</script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>0</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>^With a grim smile, (?:you[A-Z][a-z]?) touche?s? the trees and sap courses out in a thick syrup that lunges at ([A-Z][a-z]+)\, coating [Hh](?:im|er) in the viscid liquid\.$</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-            </Trigger>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>Cleanse</name>
-                <script>segtell(&quot;&quot;..matches[2]..&quot; has cleansed sap!&quot;)</script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>0</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>([A-Z][a-z]+) rubs .*? and it begins to glow with a pulsating light\.$\n^Warm water showers down upon [Hh](?:im|er)\, and [Ss]?[Hh]e scrubs under [Hh](?:is|er) armpits trying to wash away that sticky sap.$</string>
-                    <string>^Warm water showers down upon ([A-Z][a-z]+)\, who scrubs under [Hh](?:is|er) armpits trying to wash away that sticky sap\.$</string>
-                    <string>^([A-Z][a-z]+) begins to vigorously scrub [Hh](?:im|er)self all over\, trying to remove the sticky sap coating [Hh](?:is|er) body\.$</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                    <integer>1</integer>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-            </Trigger>
-        </TriggerGroup>
-        <TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-            <name>Deathsongs</name>
-            <script></script>
-            <triggerType>0</triggerType>
-            <conditonLineDelta>0</conditonLineDelta>
-            <mStayOpen>0</mStayOpen>
-            <mCommand></mCommand>
-            <packageName></packageName>
-            <mFgColor>#ff0000</mFgColor>
-            <mBgColor>#ffff00</mBgColor>
-            <mSoundFile></mSoundFile>
-            <colorTriggerFgColor>#000000</colorTriggerFgColor>
-            <colorTriggerBgColor>#000000</colorTriggerBgColor>
-            <regexCodeList/>
-            <regexCodePropertyList/>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>New Trigger</name>
-                <script>if matches[3] == &quot;you&quot; then
-cecho(&quot;\n&lt;yellow&gt;+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=[OVERGROWTH]=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+&quot;)
-cecho(&quot;\n&lt;yellow&gt;&quot;)
-cecho(&quot;\n&lt;yellow&gt;DEATHSONG DEATHSONG DEATHSONG DEATHSONG DEATHSONG DEATHSONG DEATHSONG&quot;)
-cecho(&quot;\n&lt;yellow&gt;DEATHSONG DEATHSONG DEATHSONG DEATHSONG DEATHSONG DEATHSONG DEATHSONG&quot;)
-cecho(&quot;\n&lt;yellow&gt;DEATHSONG DEATHSONG DEATHSONG DEATHSONG DEATHSONG DEATHSONG DEATHSONG&quot;)
-cecho(&quot;\n&lt;yellow&gt;DEATHSONG DEATHSONG DEATHSONG DEATHSONG DEATHSONG DEATHSONG DEATHSONG&quot;)
-cecho(&quot;\n&lt;yellow&gt;&quot;)
-cecho(&quot;\n&lt;yellow&gt;+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=[OVERGROWTH]=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+&quot;)
+segtell(""..who.." sapped "..sapped.."!")</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^With a grim smile, (?:you[A-Z][a-z]?) touche?s? the trees and sap courses out in a thick syrup that lunges at ([A-Z][a-z]+)\, coating [Hh](?:im|er) in the viscid liquid\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>Cleanse</name>
+				<script>segtell(""..matches[2].." has cleansed sap!")</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>([A-Z][a-z]+) rubs .*? and it begins to glow with a pulsating light\.$\n^Warm water showers down upon [Hh](?:im|er)\, and [Ss]?[Hh]e scrubs under [Hh](?:is|er) armpits trying to wash away that sticky sap.$</string>
+					<string>^Warm water showers down upon ([A-Z][a-z]+)\, who scrubs under [Hh](?:is|er) armpits trying to wash away that sticky sap\.$</string>
+					<string>^([A-Z][a-z]+) begins to vigorously scrub [Hh](?:im|er)self all over\, trying to remove the sticky sap coating [Hh](?:is|er) body\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+					<integer>1</integer>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+		</TriggerGroup>
+		<TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<name>Deathsongs</name>
+			<script></script>
+			<triggerType>0</triggerType>
+			<conditonLineDelta>0</conditonLineDelta>
+			<mStayOpen>0</mStayOpen>
+			<mCommand></mCommand>
+			<packageName></packageName>
+			<mFgColor>#ff0000</mFgColor>
+			<mBgColor>#ffff00</mBgColor>
+			<mSoundFile></mSoundFile>
+			<colorTriggerFgColor>#000000</colorTriggerFgColor>
+			<colorTriggerBgColor>#000000</colorTriggerBgColor>
+			<regexCodeList />
+			<regexCodePropertyList />
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>New Trigger</name>
+				<script>if matches[3] == "you" then
+cecho("\n&lt;yellow&gt;+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=[OVERGROWTH]=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+")
+cecho("\n&lt;yellow&gt;")
+cecho("\n&lt;yellow&gt;DEATHSONG DEATHSONG DEATHSONG DEATHSONG DEATHSONG DEATHSONG DEATHSONG")
+cecho("\n&lt;yellow&gt;DEATHSONG DEATHSONG DEATHSONG DEATHSONG DEATHSONG DEATHSONG DEATHSONG")
+cecho("\n&lt;yellow&gt;DEATHSONG DEATHSONG DEATHSONG DEATHSONG DEATHSONG DEATHSONG DEATHSONG")
+cecho("\n&lt;yellow&gt;DEATHSONG DEATHSONG DEATHSONG DEATHSONG DEATHSONG DEATHSONG DEATHSONG")
+cecho("\n&lt;yellow&gt;")
+cecho("\n&lt;yellow&gt;+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=[OVERGROWTH]=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+")
 else
- segtell(string.upper(&quot;&quot;..matches[2])..&quot; has begun DEATHSONG.&quot;)
+ segtell(string.upper(""..matches[2]).." has begun DEATHSONG.")
  ogquicktarget = matches[2]
- ognote(&quot;Quicktarget set to &quot;..matches[2])
+ ognote("Quicktarget set to "..matches[2])
 end</script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>0</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>^\&amp;quot;.+?\&amp;quot; sings ([A-Z][a-z]+)\, (?:somber notes tumbling out of .+?|as .+? plays deep\, dark melodies|tragically playing .+? with a mournful thrum|while .+? lets loose with screaming melodies)\, and [Ss]?[Hh]e looks directly at (.*?)\.$</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-            </Trigger>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>New Trigger</name>
-                <script>cecho(&quot;\n&lt;red&gt;+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=[OVERGROWTH]=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+&quot;)
-cecho(&quot;\n&lt;red&gt;&quot;)
-cecho(&quot;\n&lt;red&gt;DEATHSONG DEATHSONG DEATHSONG DEATHSONG DEATHSONG DEATHSONG DEATHSONG&quot;)
-cecho(&quot;\n&lt;red&gt;DEATHSONG DEATHSONG DEATHSONG DEATHSONG DEATHSONG DEATHSONG DEATHSONG&quot;)
-cecho(&quot;\n&lt;red&gt;DEATHSONG DEATHSONG DEATHSONG DEATHSONG DEATHSONG DEATHSONG DEATHSONG&quot;)
-cecho(&quot;\n&lt;red&gt;DEATHSONG DEATHSONG DEATHSONG DEATHSONG DEATHSONG DEATHSONG DEATHSONG&quot;)
-cecho(&quot;\n&lt;red&gt;&quot;)
-cecho(&quot;\n&lt;red&gt;+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=[OVERGROWTH]=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+&quot;)
-segtell(string.upper(&quot;&quot;..matches[2])..&quot; has DEATHSONG on me! GUST them now!&quot;)</script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>0</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>^Clasping [Hh](?:is|er) hands to [Hh](?:is|er) breast\, ([A-Z][a-z]+) sings to you\, wishing you well on your journey to the Halls of the Fates\. A white light surrounds [Hh](?:im|er) as the voices of an angelic choir join [Hh](?:is|er) in this somber hymn\.$</string>
-                    <string>^The throat of ([A-Z][a-z]+) undulates and warbles as [Ss]?[Hh]e continues to maintain the moaning note of [Hh](?:is|er) song\. Ominous black shadows rise out of the ground\, slowly circling around you\.$</string>
-                    <string>^Sweat breaks out on ([A-Z][a-z]+)'s forehead, as [Ss]?[Hh]e continues to maintain the screaming note of [Hh](?:is|er) song\. Ghostly spiked bands materialize around you\, which slowly begin to spin and screech like rusty iron cogs\.$</string>
-                    <string>^([A-Z][a-z]+)\'s eyes roll up in [Hh](?:is|er) head\, as [Ss]?[Hh]e sings a throbbing note\. Unseen drums begin to beat and invisible spirits begin to chant\, as mists rise up from the ground and swirl around you\.$</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                    <integer>1</integer>
-                    <integer>1</integer>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-            </Trigger>
-        </TriggerGroup>
-        <TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-            <name>Summon</name>
-            <script></script>
-            <triggerType>0</triggerType>
-            <conditonLineDelta>0</conditonLineDelta>
-            <mStayOpen>0</mStayOpen>
-            <mCommand></mCommand>
-            <packageName></packageName>
-            <mFgColor>#ff0000</mFgColor>
-            <mBgColor>#ffff00</mBgColor>
-            <mSoundFile></mSoundFile>
-            <colorTriggerFgColor>#000000</colorTriggerFgColor>
-            <colorTriggerBgColor>#000000</colorTriggerBgColor>
-            <regexCodeList/>
-            <regexCodePropertyList/>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>summon1</name>
-                <script>overgrow(&quot;SUMMONING&quot;,&quot;white&quot;)
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^\&amp;quot;.+?\&amp;quot; sings ([A-Z][a-z]+)\, (?:somber notes tumbling out of .+?|as .+? plays deep\, dark melodies|tragically playing .+? with a mournful thrum|while .+? lets loose with screaming melodies)\, and [Ss]?[Hh]e looks directly at (.*?)\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>New Trigger</name>
+				<script>cecho("\n&lt;red&gt;+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=[OVERGROWTH]=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+")
+cecho("\n&lt;red&gt;")
+cecho("\n&lt;red&gt;DEATHSONG DEATHSONG DEATHSONG DEATHSONG DEATHSONG DEATHSONG DEATHSONG")
+cecho("\n&lt;red&gt;DEATHSONG DEATHSONG DEATHSONG DEATHSONG DEATHSONG DEATHSONG DEATHSONG")
+cecho("\n&lt;red&gt;DEATHSONG DEATHSONG DEATHSONG DEATHSONG DEATHSONG DEATHSONG DEATHSONG")
+cecho("\n&lt;red&gt;DEATHSONG DEATHSONG DEATHSONG DEATHSONG DEATHSONG DEATHSONG DEATHSONG")
+cecho("\n&lt;red&gt;")
+cecho("\n&lt;red&gt;+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=[OVERGROWTH]=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+")
+segtell(string.upper(""..matches[2]).." has DEATHSONG on me! GUST them now!")</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^Clasping [Hh](?:is|er) hands to [Hh](?:is|er) breast\, ([A-Z][a-z]+) sings to you\, wishing you well on your journey to the Halls of the Fates\. A white light surrounds [Hh](?:im|er) as the voices of an angelic choir join [Hh](?:is|er) in this somber hymn\.$</string>
+					<string>^The throat of ([A-Z][a-z]+) undulates and warbles as [Ss]?[Hh]e continues to maintain the moaning note of [Hh](?:is|er) song\. Ominous black shadows rise out of the ground\, slowly circling around you\.$</string>
+					<string>^Sweat breaks out on ([A-Z][a-z]+)'s forehead, as [Ss]?[Hh]e continues to maintain the screaming note of [Hh](?:is|er) song\. Ghostly spiked bands materialize around you\, which slowly begin to spin and screech like rusty iron cogs\.$</string>
+					<string>^([A-Z][a-z]+)\'s eyes roll up in [Hh](?:is|er) head\, as [Ss]?[Hh]e sings a throbbing note\. Unseen drums begin to beat and invisible spirits begin to chant\, as mists rise up from the ground and swirl around you\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+					<integer>1</integer>
+					<integer>1</integer>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+		</TriggerGroup>
+		<TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<name>Summon</name>
+			<script></script>
+			<triggerType>0</triggerType>
+			<conditonLineDelta>0</conditonLineDelta>
+			<mStayOpen>0</mStayOpen>
+			<mCommand></mCommand>
+			<packageName></packageName>
+			<mFgColor>#ff0000</mFgColor>
+			<mBgColor>#ffff00</mBgColor>
+			<mSoundFile></mSoundFile>
+			<colorTriggerFgColor>#000000</colorTriggerFgColor>
+			<colorTriggerBgColor>#000000</colorTriggerBgColor>
+			<regexCodeList />
+			<regexCodePropertyList />
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>summon1</name>
+				<script>overgrow("SUMMONING","white")
 </script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>1</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>^You stumble as you feel invisible strands of force wrap around you\, followed by a high\-pitched thrum\.$</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-                <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                    <name>aethersight</name>
-                    <script>local name = string.gsub(matches[2], &quot;You sense &quot;, &quot;&quot;)
-name = string.gsub(name, &quot; pulling on the strands of aether surrounding you&quot;, &quot;&quot;)
-overgrow(name..&quot; SUMMONING YOU&quot;,&quot;red&quot;)</script>
-                    <triggerType>0</triggerType>
-                    <conditonLineDelta>0</conditonLineDelta>
-                    <mStayOpen>0</mStayOpen>
-                    <mCommand></mCommand>
-                    <packageName></packageName>
-                    <mFgColor>#ff0000</mFgColor>
-                    <mBgColor>#ffff00</mBgColor>
-                    <mSoundFile></mSoundFile>
-                    <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                    <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                    <regexCodeList>
-                        <string>You sense (\w+) pulling on the strands of aether surrounding you\.$</string>
-                    </regexCodeList>
-                    <regexCodePropertyList>
-                        <integer>1</integer>
-                    </regexCodePropertyList>
-                </Trigger>
-            </Trigger>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>summon2</name>
-                <script>local summoned = matches[2]
-overgrow(summoned..&quot; BEING SUMMONED&quot;,&quot;white&quot;)
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>1</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^You stumble as you feel invisible strands of force wrap around you\, followed by a high\-pitched thrum\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+					<name>aethersight</name>
+					<script>local name = string.gsub(matches[2], "You sense ", "")
+name = string.gsub(name, " pulling on the strands of aether surrounding you", "")
+overgrow(name.." SUMMONING YOU","red")</script>
+					<triggerType>0</triggerType>
+					<conditonLineDelta>0</conditonLineDelta>
+					<mStayOpen>0</mStayOpen>
+					<mCommand></mCommand>
+					<packageName></packageName>
+					<mFgColor>#ff0000</mFgColor>
+					<mBgColor>#ffff00</mBgColor>
+					<mSoundFile></mSoundFile>
+					<colorTriggerFgColor>#000000</colorTriggerFgColor>
+					<colorTriggerBgColor>#000000</colorTriggerBgColor>
+					<regexCodeList>
+						<string>You sense (\w+) pulling on the strands of aether surrounding you\.$</string>
+					</regexCodeList>
+					<regexCodePropertyList>
+						<integer>1</integer>
+					</regexCodePropertyList>
+				</Trigger>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>summon2</name>
+				<script>local summoned = matches[2]
+overgrow(summoned.." BEING SUMMONED","white")
 </script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>1</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>^([A-Z][a-z]+) suddenly stumbles as the air is filled with a high-pitched thrum\.$</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-                <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                    <name>New Trigger</name>
-                    <script>local summoned = matches[3]
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>1</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^([A-Z][a-z]+) suddenly stumbles as the air is filled with a high-pitched thrum\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+				<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+					<name>New Trigger</name>
+					<script>local summoned = matches[3]
 local name = matches[2]
-name = string.gsub(name, &quot; pulling on the strands of aether surrounding &quot;..summoned, &quot;&quot;)
-overgrow(string.upper(name)..&quot; SUMMONING &quot;..string.upper(summoned),&quot;red&quot;)
-segtell(name..&quot; is summoning &quot;..summoned)</script>
-                    <triggerType>0</triggerType>
-                    <conditonLineDelta>0</conditonLineDelta>
-                    <mStayOpen>0</mStayOpen>
-                    <mCommand></mCommand>
-                    <packageName></packageName>
-                    <mFgColor>#ff0000</mFgColor>
-                    <mBgColor>#ffff00</mBgColor>
-                    <mSoundFile></mSoundFile>
-                    <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                    <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                    <regexCodeList>
-                        <string>^You sense (\w+) pulling on the strands of aether surrounding (\w+)\.$</string>
-                    </regexCodeList>
-                    <regexCodePropertyList>
-                        <integer>1</integer>
-                    </regexCodePropertyList>
-                </Trigger>
-            </Trigger>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>Willowisp</name>
-                <script>overgrow(&quot;You are being willowisped, Drop monolith or move away&quot;)</script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>0</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>^You hear the sound of tinkling silver bells and see a ball of light bobbing in the air before you\.$</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-            </Trigger>
-        </TriggerGroup>
-        <TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-            <name>Melding</name>
-            <script></script>
-            <triggerType>0</triggerType>
-            <conditonLineDelta>0</conditonLineDelta>
-            <mStayOpen>0</mStayOpen>
-            <mCommand></mCommand>
-            <packageName></packageName>
-            <mFgColor>#ff0000</mFgColor>
-            <mBgColor>#ffff00</mBgColor>
-            <mSoundFile></mSoundFile>
-            <colorTriggerFgColor>#000000</colorTriggerFgColor>
-            <colorTriggerBgColor>#000000</colorTriggerBgColor>
-            <regexCodeList/>
-            <regexCodePropertyList/>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>Wyrd</name>
-                <script>  cecho(&quot;\n&lt;purple&gt;|-------------------------WYRDED WYRDED WYRDED WYRDED-------------------------|&quot;)
-  cecho(&quot;\n&lt;purple&gt;|-------------------------WYRDED WYRDED WYRDED WYRDED-------------------------|&quot;)
-  cecho(&quot;\n&lt;purple&gt;|-------------------------WYRDED WYRDED WYRDED WYRDED-------------------------|&quot;)</script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>0</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>^[A-Z][a-z]+ raises [Hh](?:is|er) arms and hums deeply the note of the forest\, which breaks into a discordant tone\.</string>
-                    <string>^[A-Z][a-z]+ presses [Hh](?:is|er) lips together and makes a buzzing sound\. S?[Hh]e then opens [Hh](?:is|er) mouth and vomits forth a stream of swarming locusts that greedily infest the surrounding land and gorge themselves until they bloat\.$</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-            </Trigger>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>Taint</name>
-                <script>  cecho(&quot;\n&lt;darkred&gt;|-------------------------TAINTED TAINTED TAINTED TAINTED-------------------------|&quot;)
-  cecho(&quot;\n&lt;darkred&gt;|-------------------------TAINTED TAINTED TAINTED TAINTED-------------------------|&quot;)
-  cecho(&quot;\n&lt;darkred&gt;|-------------------------TAINTED TAINTED TAINTED TAINTED-------------------------|&quot;)</script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>0</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>Slowly raising [Hh](?:is|er) arms above [Hh](?:is|er) head\, [A-Z][a-z]+ shouts a guttural phrase that causes the ground to rumble\. Tendrils of black smoke rise up from the earth and choke the life out of the surrounding foliage\, which shrivels up and becomes brittle\.$</string>
-                    <string>^Thick\, oily smoke pours out of the mouth of [A-Z][a-z]+ and creates an ankle\-deep carpet of seething black fog\. As the smoke is soaked into the ground\, the area turns putrid and foul\. This location is now tainted\.$</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-            </Trigger>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>Forest</name>
-                <script>  cecho(&quot;\n&lt;green&gt;|-------------------------FOREST FOREST FOREST FOREST-------------------------|&quot;)
-  cecho(&quot;\n&lt;green&gt;|-------------------------FOREST FOREST FOREST FOREST-------------------------|&quot;)
-  cecho(&quot;\n&lt;green&gt;|-------------------------FOREST FOREST FOREST FOREST-------------------------|&quot;)</script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>0</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>^(?:You|[A-Z][a-z]+) raises? (?:[Hh](?:is|er)|your) arms and hums? deeply the note of the forest\.</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-            </Trigger>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>Clouds</name>
-                <script>cecho(&quot;\n&lt;white&gt;|-------------------------CLOUDS CLOUDS CLOUDS CLOUDS-------------------------|&quot;)
-cecho(&quot;\n&lt;white&gt;|-------------------------CLOUDS CLOUDS CLOUDS CLOUDS-------------------------|&quot;)
-cecho(&quot;\n&lt;white&gt;|-------------------------CLOUDS CLOUDS CLOUDS CLOUDS-------------------------|&quot;)</script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>0</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>^[A-Z][a-z]+ takes a deep breath\, then slowly breathes out\, as the temperature in the room falls and banks of clouds roll in</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-            </Trigger>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>Flooded</name>
-                <script>cecho(&quot;\n&lt;navy&gt;|-----------------------FLOODED FLOODED FLOODED FLOODED-----------------------|&quot;)
-cecho(&quot;\n&lt;navy&gt;|-----------------------FLOODED FLOODED FLOODED FLOODED-----------------------|&quot;)
-cecho(&quot;\n&lt;navy&gt;|-----------------------FLOODED FLOODED FLOODED FLOODED-----------------------|&quot;)</script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>0</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>^[A-Z][a-z]+ spins slowly around in a circle(?: and water bubbles up from the ground\, flooding the area\.|\, causing water to bubble and froth\, becoming pure and clean\.)$</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-            </Trigger>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>Flames</name>
-                <script>  cecho(&quot;\n&lt;red&gt;|-------------------------FLAMES FLAMES FLAMES FLAMES-------------------------|&quot;)
-  cecho(&quot;\n&lt;red&gt;|-------------------------FLAMES FLAMES FLAMES FLAMES-------------------------|&quot;)
-  cecho(&quot;\n&lt;red&gt;|-------------------------FLAMES FLAMES FLAMES FLAMES-------------------------|&quot;)</script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>0</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>^After rubbing [Hh](?:is|er) hands together\, [A-Z][a-z]+ pulls them apart and releases thousands of glowing red sparks that whirl around [Hh](?:im|er) in a chaotic dance before flaring into small flames that spread out across the expanse of the location</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-            </Trigger>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>AeroMeld</name>
-                <script>cecho(&quot;\n&lt;dodger_blue&gt;|------------------------------MELD MELD MELD MELD----------------------------|&quot;)
-cecho(&quot;\n&lt;dodger_blue&gt;|------------------AEROMANCER AEROMANCER AEROMANCER AEROMANCER----------------|&quot;)
-cecho(&quot;\n&lt;dodger_blue&gt;|------------------------------MELD MELD MELD MELD----------------------------|&quot;)</script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>0</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>^[A-Z][a-z]+ sweeps the air with [Hh](?:is|er) hand and [Hh](?:is|er) eyes glow with a phosphorescent blue\.$</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-            </Trigger>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>GeoMeld</name>
-                <script>cecho(&quot;\n&lt;red&gt;|------------------------------MELD MELD MELD MELD----------------------------|&quot;)
-cecho(&quot;\n&lt;red&gt;|--------------------GEOMANCER GEOMANCER GEOMANCER GEOMANCER------------------|&quot;)
-cecho(&quot;\n&lt;red&gt;|------------------------------MELD MELD MELD MELD----------------------------|&quot;)</script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>0</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>^[A-Z][a-z]+ stomps on the ground and [Hh](?:is|er) eyes shine with an eerie red glow\.$</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-            </Trigger>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>HartStone</name>
-                <script>cecho(&quot;\n&lt;lime_green&gt;|------------------------------MELD MELD MELD MELD----------------------------|&quot;)
-cecho(&quot;\n&lt;lime_green&gt;|--------------------HARTSTONE HARTSTONE HARTSTONE HARTSTONE------------------|&quot;)
-cecho(&quot;\n&lt;lime_green&gt;|------------------------------MELD MELD MELD MELD----------------------------|&quot;)</script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>0</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>^[A-Z][a-z]+ kneels down and touches [Hh](?:is|er) forehead to the earth\, then whispers softly\. A deep emerald glow ripples across the ground and [A-Z][a-z]+\'s eyes momentarily flash with a matching emerald light\.$</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-            </Trigger>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>PyroMeld</name>
-                <script>cecho(&quot;\n&lt;dark_orange&gt;|------------------------------MELD MELD MELD MELD----------------------------|&quot;)
-cecho(&quot;\n&lt;dark_orange&gt;|------------------PYROMANCER PYROMANCER PYROMANCER PYROMANCER----------------|&quot;)
-cecho(&quot;\n&lt;dark_orange&gt;|------------------------------MELD MELD MELD MELD----------------------------|&quot;)</script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>0</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>^[A-Z][a-z]+ claps [Hh](?:is|er) hands and [Hh](?:is|er) head is momentarily wreathed with a crown of flames\.$</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-            </Trigger>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>BlackTalon</name>
-                <script>cecho(&quot;\n&lt;medium_orchid&gt;|------------------------------MELD MELD MELD MELD----------------------------|&quot;)
-cecho(&quot;\n&lt;medium_orchid&gt;|------------------BLACKTALON BLACKTALON BLACKTALON BLACKTALON----------------|&quot;)
-cecho(&quot;\n&lt;medium_orchid&gt;|------------------------------MELD MELD MELD MELD----------------------------|&quot;)</script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>0</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>^[A-Z][a-z]+ crouches low and looses a terrifying\, raucous cry that echoes through the air\, the shadows writhing and whispering with a seething\, malevolent will\. A horrific mauve light twists across the ground\, the plant\-life shuddering violently in response\.$</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-            </Trigger>
-            <Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
-                <name>AquaMeld</name>
-                <script>cecho(&quot;\n&lt;blue&gt;|------------------------------MELD MELD MELD MELD----------------------------|&quot;)
-cecho(&quot;\n&lt;blue&gt;|------------------AQUAMANCER AQUAMANCER AQUAMANCER AQUAMANCER----------------|&quot;)
-cecho(&quot;\n&lt;blue&gt;|------------------------------MELD MELD MELD MELD----------------------------|&quot;)</script>
-                <triggerType>0</triggerType>
-                <conditonLineDelta>0</conditonLineDelta>
-                <mStayOpen>0</mStayOpen>
-                <mCommand></mCommand>
-                <packageName></packageName>
-                <mFgColor>#ff0000</mFgColor>
-                <mBgColor>#ffff00</mBgColor>
-                <mSoundFile></mSoundFile>
-                <colorTriggerFgColor>#000000</colorTriggerFgColor>
-                <colorTriggerBgColor>#000000</colorTriggerBgColor>
-                <regexCodeList>
-                    <string>^([A-Z][a-z]+) bends down and traces trails in the water with [hH](?:is|er) finger\. The waters sparkle with flecks of azure light\.$</string>
-                </regexCodeList>
-                <regexCodePropertyList>
-                    <integer>1</integer>
-                </regexCodePropertyList>
-            </Trigger>
-        </TriggerGroup>
-    </TriggerPackage>
-    <TimerPackage/>
-    <AliasPackage>
-        <Alias isActive="yes" isFolder="no">
-            <name>Change Announce </name>
-            <script>
+name = string.gsub(name, " pulling on the strands of aether surrounding "..summoned, "")
+overgrow(string.upper(name).." SUMMONING "..string.upper(summoned),"red")
+segtell(name.." is summoning "..summoned)</script>
+					<triggerType>0</triggerType>
+					<conditonLineDelta>0</conditonLineDelta>
+					<mStayOpen>0</mStayOpen>
+					<mCommand></mCommand>
+					<packageName></packageName>
+					<mFgColor>#ff0000</mFgColor>
+					<mBgColor>#ffff00</mBgColor>
+					<mSoundFile></mSoundFile>
+					<colorTriggerFgColor>#000000</colorTriggerFgColor>
+					<colorTriggerBgColor>#000000</colorTriggerBgColor>
+					<regexCodeList>
+						<string>^You sense (\w+) pulling on the strands of aether surrounding (\w+)\.$</string>
+					</regexCodeList>
+					<regexCodePropertyList>
+						<integer>1</integer>
+					</regexCodePropertyList>
+				</Trigger>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>Willowisp</name>
+				<script>overgrow("You are being willowisped, Drop monolith or move away")</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^You hear the sound of tinkling silver bells and see a ball of light bobbing in the air before you\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+		</TriggerGroup>
+		<TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<name>Melding</name>
+			<script></script>
+			<triggerType>0</triggerType>
+			<conditonLineDelta>0</conditonLineDelta>
+			<mStayOpen>0</mStayOpen>
+			<mCommand></mCommand>
+			<packageName></packageName>
+			<mFgColor>#ff0000</mFgColor>
+			<mBgColor>#ffff00</mBgColor>
+			<mSoundFile></mSoundFile>
+			<colorTriggerFgColor>#000000</colorTriggerFgColor>
+			<colorTriggerBgColor>#000000</colorTriggerBgColor>
+			<regexCodeList />
+			<regexCodePropertyList />
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>Wyrd</name>
+				<script>  cecho("\n&lt;purple&gt;|-------------------------WYRDED WYRDED WYRDED WYRDED-------------------------|")
+  cecho("\n&lt;purple&gt;|-------------------------WYRDED WYRDED WYRDED WYRDED-------------------------|")
+  cecho("\n&lt;purple&gt;|-------------------------WYRDED WYRDED WYRDED WYRDED-------------------------|")</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^[A-Z][a-z]+ raises [Hh](?:is|er) arms and hums deeply the note of the forest\, which breaks into a discordant tone\.</string>
+					<string>^[A-Z][a-z]+ presses [Hh](?:is|er) lips together and makes a buzzing sound\. S?[Hh]e then opens [Hh](?:is|er) mouth and vomits forth a stream of swarming locusts that greedily infest the surrounding land and gorge themselves until they bloat\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>Taint</name>
+				<script>  cecho("\n&lt;darkred&gt;|-------------------------TAINTED TAINTED TAINTED TAINTED-------------------------|")
+  cecho("\n&lt;darkred&gt;|-------------------------TAINTED TAINTED TAINTED TAINTED-------------------------|")
+  cecho("\n&lt;darkred&gt;|-------------------------TAINTED TAINTED TAINTED TAINTED-------------------------|")</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>Slowly raising [Hh](?:is|er) arms above [Hh](?:is|er) head\, [A-Z][a-z]+ shouts a guttural phrase that causes the ground to rumble\. Tendrils of black smoke rise up from the earth and choke the life out of the surrounding foliage\, which shrivels up and becomes brittle\.$</string>
+					<string>^Thick\, oily smoke pours out of the mouth of [A-Z][a-z]+ and creates an ankle\-deep carpet of seething black fog\. As the smoke is soaked into the ground\, the area turns putrid and foul\. This location is now tainted\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>Forest</name>
+				<script>  cecho("\n&lt;green&gt;|-------------------------FOREST FOREST FOREST FOREST-------------------------|")
+  cecho("\n&lt;green&gt;|-------------------------FOREST FOREST FOREST FOREST-------------------------|")
+  cecho("\n&lt;green&gt;|-------------------------FOREST FOREST FOREST FOREST-------------------------|")</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^(?:You|[A-Z][a-z]+) raises? (?:[Hh](?:is|er)|your) arms and hums? deeply the note of the forest\.</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>Clouds</name>
+				<script>cecho("\n&lt;white&gt;|-------------------------CLOUDS CLOUDS CLOUDS CLOUDS-------------------------|")
+cecho("\n&lt;white&gt;|-------------------------CLOUDS CLOUDS CLOUDS CLOUDS-------------------------|")
+cecho("\n&lt;white&gt;|-------------------------CLOUDS CLOUDS CLOUDS CLOUDS-------------------------|")</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^[A-Z][a-z]+ takes a deep breath\, then slowly breathes out\, as the temperature in the room falls and banks of clouds roll in</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>Flooded</name>
+				<script>cecho("\n&lt;navy&gt;|-----------------------FLOODED FLOODED FLOODED FLOODED-----------------------|")
+cecho("\n&lt;navy&gt;|-----------------------FLOODED FLOODED FLOODED FLOODED-----------------------|")
+cecho("\n&lt;navy&gt;|-----------------------FLOODED FLOODED FLOODED FLOODED-----------------------|")</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^[A-Z][a-z]+ spins slowly around in a circle(?: and water bubbles up from the ground\, flooding the area\.|\, causing water to bubble and froth\, becoming pure and clean\.)$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>Flames</name>
+				<script>  cecho("\n&lt;red&gt;|-------------------------FLAMES FLAMES FLAMES FLAMES-------------------------|")
+  cecho("\n&lt;red&gt;|-------------------------FLAMES FLAMES FLAMES FLAMES-------------------------|")
+  cecho("\n&lt;red&gt;|-------------------------FLAMES FLAMES FLAMES FLAMES-------------------------|")</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^After rubbing [Hh](?:is|er) hands together\, [A-Z][a-z]+ pulls them apart and releases thousands of glowing red sparks that whirl around [Hh](?:im|er) in a chaotic dance before flaring into small flames that spread out across the expanse of the location</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>AeroMeld</name>
+				<script>cecho("\n&lt;dodger_blue&gt;|------------------------------MELD MELD MELD MELD----------------------------|")
+cecho("\n&lt;dodger_blue&gt;|------------------AEROMANCER AEROMANCER AEROMANCER AEROMANCER----------------|")
+cecho("\n&lt;dodger_blue&gt;|------------------------------MELD MELD MELD MELD----------------------------|")</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^[A-Z][a-z]+ sweeps the air with [Hh](?:is|er) hand and [Hh](?:is|er) eyes glow with a phosphorescent blue\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>GeoMeld</name>
+				<script>cecho("\n&lt;red&gt;|------------------------------MELD MELD MELD MELD----------------------------|")
+cecho("\n&lt;red&gt;|--------------------GEOMANCER GEOMANCER GEOMANCER GEOMANCER------------------|")
+cecho("\n&lt;red&gt;|------------------------------MELD MELD MELD MELD----------------------------|")</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^[A-Z][a-z]+ stomps on the ground and [Hh](?:is|er) eyes shine with an eerie red glow\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>HartStone</name>
+				<script>cecho("\n&lt;lime_green&gt;|------------------------------MELD MELD MELD MELD----------------------------|")
+cecho("\n&lt;lime_green&gt;|--------------------HARTSTONE HARTSTONE HARTSTONE HARTSTONE------------------|")
+cecho("\n&lt;lime_green&gt;|------------------------------MELD MELD MELD MELD----------------------------|")</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^[A-Z][a-z]+ kneels down and touches [Hh](?:is|er) forehead to the earth\, then whispers softly\. A deep emerald glow ripples across the ground and [A-Z][a-z]+\'s eyes momentarily flash with a matching emerald light\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>PyroMeld</name>
+				<script>cecho("\n&lt;dark_orange&gt;|------------------------------MELD MELD MELD MELD----------------------------|")
+cecho("\n&lt;dark_orange&gt;|------------------PYROMANCER PYROMANCER PYROMANCER PYROMANCER----------------|")
+cecho("\n&lt;dark_orange&gt;|------------------------------MELD MELD MELD MELD----------------------------|")</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^[A-Z][a-z]+ claps [Hh](?:is|er) hands and [Hh](?:is|er) head is momentarily wreathed with a crown of flames\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>BlackTalon</name>
+				<script>cecho("\n&lt;medium_orchid&gt;|------------------------------MELD MELD MELD MELD----------------------------|")
+cecho("\n&lt;medium_orchid&gt;|------------------BLACKTALON BLACKTALON BLACKTALON BLACKTALON----------------|")
+cecho("\n&lt;medium_orchid&gt;|------------------------------MELD MELD MELD MELD----------------------------|")</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^[A-Z][a-z]+ crouches low and looses a terrifying\, raucous cry that echoes through the air\, the shadows writhing and whispering with a seething\, malevolent will\. A horrific mauve light twists across the ground\, the plant\-life shuddering violently in response\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>AquaMeld</name>
+				<script>cecho("\n&lt;blue&gt;|------------------------------MELD MELD MELD MELD----------------------------|")
+cecho("\n&lt;blue&gt;|------------------AQUAMANCER AQUAMANCER AQUAMANCER AQUAMANCER----------------|")
+cecho("\n&lt;blue&gt;|------------------------------MELD MELD MELD MELD----------------------------|")</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^([A-Z][a-z]+) bends down and traces trails in the water with [hH](?:is|er) finger\. The waters sparkle with flecks of azure light\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+		</TriggerGroup>
+		<TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<name>Target Calls</name>
+			<script></script>
+			<triggerType>0</triggerType>
+			<conditonLineDelta>0</conditonLineDelta>
+			<mStayOpen>0</mStayOpen>
+			<mCommand></mCommand>
+			<packageName></packageName>
+			<mFgColor>#ff0000</mFgColor>
+			<mBgColor>#ffff00</mBgColor>
+			<mSoundFile></mSoundFile>
+			<colorTriggerFgColor>#000000</colorTriggerFgColor>
+			<colorTriggerBgColor>#000000</colorTriggerBgColor>
+			<regexCodeList />
+			<regexCodePropertyList />
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>New Trigger</name>
+				<script>ognote("Quicktarget set to: "..string.upper(matches[5]))
+ogquicktarget = string.title(matches[5]) </script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^\((.+?)\)\: (\w+) says\, \"(Target|Target\:|Targeting|Targeting\:) (\w+)\.\"$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+		</TriggerGroup>
+	</TriggerPackage>
+	<TimerPackage />
+	<AliasPackage>
+		<Alias isActive="yes" isFolder="no">
+			<name>Change Announce</name>
+			<script>
 ogchannel = matches[2]
-ognote(&quot;ANNOUNCING THINGS ON: '&quot;..ogchannel..&quot;'&quot;)</script>
-            <command></command>
-            <packageName></packageName>
-            <regex>^ogtell (.+?)$</regex>
-        </Alias>
-        <Alias isActive="yes" isFolder="no">
-            <name>Quck target</name>
-            <script>target = ogquicktarget
-ognote(&quot;TARGET CHANGED TO: &quot;..ogquicktarget)</script>
-            <command></command>
-            <packageName></packageName>
-            <regex>^qt$</regex>
-        </Alias>
-        <Alias isActive="yes" isFolder="no">
-            <name>Leader</name>
-            <script>ogleader = string.title(matches[2])
-ognote(&quot;Leader set to: &quot;..ogleader)</script>
-            <command></command>
-            <packageName></packageName>
-            <regex>^ogleader (\w+)$</regex>
-        </Alias>
-    </AliasPackage>
-    <ActionPackage/>
-    <ScriptPackage>
-        <Script isActive="yes" isFolder="no">
-            <name>Overgrowth Functions</name>
-            <packageName></packageName>
-            <script>
-ogchannel = &quot;clan seg tell&quot;
-ogleader = &quot;Sondayga&quot;
-ogquicktarget = &quot;none&quot;
+ognote("ANNOUNCING THINGS ON: '"..ogchannel.."'")</script>
+			<command></command>
+			<packageName></packageName>
+			<regex>^ogtell (.+?)$</regex>
+		</Alias>
+		<Alias isActive="yes" isFolder="no">
+			<name>Quck target</name>
+			<script>target = ogquicktarget
+ognote("TARGET CHANGED TO: "..ogquicktarget)</script>
+			<command></command>
+			<packageName></packageName>
+			<regex>^qt$</regex>
+		</Alias>
+		<Alias isActive="yes" isFolder="no">
+			<name>Leader</name>
+			<script>ogleader = string.title(matches[2])
+ognote("Leader set to: "..ogleader)</script>
+			<command></command>
+			<packageName></packageName>
+			<regex>^ogleader (\w+)$</regex>
+		</Alias>
+		<Alias isActive="yes" isFolder="no">
+			<name>Announce Target</name>
+			<script>	ognote("Target changed to: "..matches[2])
+	segtell("Targeting "..string.title(matches[2]))
+	target = string.title(matches[2])
+	ogquicktarget = string.title(matches[2])</script>
+			<command>^a (.+?)$</command>
+			<packageName></packageName>
+			<regex></regex>
+		</Alias>
+	</AliasPackage>
+	<ActionPackage />
+	<ScriptPackage>
+		<Script isActive="yes" isFolder="no">
+			<name>Overgrowth Functions</name>
+			<packageName></packageName>
+			<script>
+ogchannel = "clan seg tell"
+ogleader = "Sondayga"
+ogquicktarget = "none"
 
 
 function ognote(msg)
-cecho(&quot;\n&lt;brown&gt;(&lt;green&gt;OverGrowth&lt;brown&gt;)&lt;green&gt;: &lt;snow&gt;&quot;..msg..&quot;&quot;)
+cecho("\n&lt;brown&gt;(&lt;green&gt;OverGrowth&lt;brown&gt;)&lt;green&gt;: &lt;snow&gt;"..msg.."")
 end
 
 function overgrow(msg,color)
   local len = string.len(msg)
-  local color2 = color or &quot;lime_green&quot;
-  local color = color or &quot;sea_green&quot;
+  local color2 = color or "lime_green"
+  local color = color or "sea_green"
 
-  cecho(&quot;\n&lt;&quot;..color..&quot;&gt;&lt;&gt;---&quot;..string.rep(&quot;-&quot;,len)..&quot;---&lt;&gt;&quot;)
-  cecho(&quot;\n&lt;&quot;..color..&quot;&gt;|    &lt;&quot;..color2..&quot;&gt;&quot;..msg..&quot;&lt;&quot;..color..&quot;&gt;    |&quot;)
-  cecho(&quot;\n&lt;&quot;..color..&quot;&gt;|    &lt;&quot;..color2..&quot;&gt;&quot;..msg..&quot;&lt;&quot;..color..&quot;&gt;    |&quot;)
-  cecho(&quot;\n&lt;&quot;..color..&quot;&gt;|    &lt;&quot;..color2..&quot;&gt;&quot;..msg..&quot;&lt;&quot;..color..&quot;&gt;    |&quot;)
-  cecho(&quot;\n&lt;&quot;..color..&quot;&gt;&lt;&gt;---&quot;..string.rep(&quot;-&quot;,len)..&quot;---&lt;&gt;&quot;)
+  cecho("\n&lt;"..color.."&gt;&lt;&gt;---"..string.rep("-",len).."---&lt;&gt;")
+  cecho("\n&lt;"..color.."&gt;|    &lt;"..color2.."&gt;"..msg.."&lt;"..color.."&gt;    |")
+  cecho("\n&lt;"..color.."&gt;|    &lt;"..color2.."&gt;"..msg.."&lt;"..color.."&gt;    |")
+  cecho("\n&lt;"..color.."&gt;|    &lt;"..color2.."&gt;"..msg.."&lt;"..color.."&gt;    |")
+  cecho("\n&lt;"..color.."&gt;&lt;&gt;---"..string.rep("-",len).."---&lt;&gt;")
 end
 
 function OGcaution(name,msg)
   local namelen = string.len(name)
   local msglen = string.len(msg)
 
-	cecho(&quot;\n&lt;yellow&gt;&lt;&gt;---&quot;..string.rep(&quot;-&quot;, namelen)..&quot;-&quot;..string.rep(&quot;-&quot;, msglen)..&quot;---&lt;&gt;&quot;)
-	cecho(&quot;\n&lt;yellow&gt;|    &lt;red&gt;&quot;..string.upper(name)..&quot;&lt;yellow&gt;&quot;..msg..&quot;    |&quot;)
-	cecho(&quot;\n&lt;yellow&gt;|    &lt;red&gt;&quot;..string.upper(name)..&quot;&lt;yellow&gt;&quot;..msg..&quot;    |&quot;)
-	cecho(&quot;\n&lt;yellow&gt;|    &lt;red&gt;&quot;..string.upper(name)..&quot;&lt;yellow&gt;&quot;..msg..&quot;    |&quot;)
-	cecho(&quot;\n&lt;yellow&gt;&lt;&gt;---&quot;..string.rep(&quot;-&quot;, namelen)..&quot;-&quot;..string.rep(&quot;-&quot;, msglen)..&quot;---&lt;&gt;&quot;)
+	cecho("\n&lt;yellow&gt;&lt;&gt;---"..string.rep("-", namelen).."-"..string.rep("-", msglen).."---&lt;&gt;")
+	cecho("\n&lt;yellow&gt;|    &lt;red&gt;"..string.upper(name).."&lt;yellow&gt;"..msg.."    |")
+	cecho("\n&lt;yellow&gt;|    &lt;red&gt;"..string.upper(name).."&lt;yellow&gt;"..msg.."    |")
+	cecho("\n&lt;yellow&gt;|    &lt;red&gt;"..string.upper(name).."&lt;yellow&gt;"..msg.."    |")
+	cecho("\n&lt;yellow&gt;&lt;&gt;---"..string.rep("-", namelen).."-"..string.rep("-", msglen).."---&lt;&gt;")
 end
 
 function OGwarning(name,msg)
   local namelen = string.len(name)
   local msglen = string.len(msg)
 
-	cecho(&quot;\n&lt;red&gt;&lt;&gt;---&quot;..string.rep(&quot;-&quot;, namelen)..&quot;-&quot;..string.rep(&quot;-&quot;, msglen)..&quot;---&lt;&gt;&quot;)
-	cecho(&quot;\n&lt;red&gt;|    &lt;yellow&gt;&quot;..string.upper(name)..&quot;&lt;red&gt;&quot;..msg..&quot;    |&quot;)
-	cecho(&quot;\n&lt;red&gt;|    &lt;yellow&gt;&quot;..string.upper(name)..&quot;&lt;red&gt;&quot;..msg..&quot;    |&quot;)
-	cecho(&quot;\n&lt;red&gt;|    &lt;yellow&gt;&quot;..string.upper(name)..&quot;&lt;red&gt;&quot;..msg..&quot;    |&quot;)
-	cecho(&quot;\n&lt;red&gt;&lt;&gt;---&quot;..string.rep(&quot;-&quot;, namelen)..&quot;-&quot;..string.rep(&quot;-&quot;, msglen)..&quot;---&lt;&gt;&quot;)
+	cecho("\n&lt;red&gt;&lt;&gt;---"..string.rep("-", namelen).."-"..string.rep("-", msglen).."---&lt;&gt;")
+	cecho("\n&lt;red&gt;|    &lt;yellow&gt;"..string.upper(name).."&lt;red&gt;"..msg.."    |")
+	cecho("\n&lt;red&gt;|    &lt;yellow&gt;"..string.upper(name).."&lt;red&gt;"..msg.."    |")
+	cecho("\n&lt;red&gt;|    &lt;yellow&gt;"..string.upper(name).."&lt;red&gt;"..msg.."    |")
+	cecho("\n&lt;red&gt;&lt;&gt;---"..string.rep("-", namelen).."-"..string.rep("-", msglen).."---&lt;&gt;")
 end
 
 function segtell(msg)
-if ogchannel == &quot;off&quot; then
+if ogchannel == "off" then
 else
-send(&quot;&quot;..ogchannel..&quot; &quot;..msg)
+send(""..ogchannel.." "..msg)
 end
 end
 
@@ -1569,8 +1618,11 @@ end
 
 
 </script>
-            <eventHandlerList/>
-        </Script>
-    </ScriptPackage>
-    <KeyPackage/>
+			<eventHandlerList />
+		</Script>
+	</ScriptPackage>
+	<KeyPackage />
+	<VariablePackage>
+		<HiddenVariables />
+	</VariablePackage>
 </MudletPackage>
