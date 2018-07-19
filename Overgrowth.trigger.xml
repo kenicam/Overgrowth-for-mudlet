@@ -71,6 +71,10 @@ leader_room = string.match(matches[3], "(%d%d%d+)")
 if leader_room then
 cechoLink("\n&lt;green&gt;&lt;GROUP UP, click to travel&gt;", [[send("path walk "..leader_room)]], "GoTo", true )
 cechoLink("\n&lt;green&gt;&lt;GROUP UP, click to travel&gt;", [[send("path walk "..leader_room)]], "GoTo", true )
+<<<<<<< HEAD
+=======
+ognote("GOGO to path to "..ogleader)
+>>>>>>> updates
 end
 end</script>
 				<triggerType>0</triggerType>
@@ -443,7 +447,11 @@ ognote("Quicktarget set to "..matches[3])</script>
 			<regexCodePropertyList />
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>highjumped</name>
+<<<<<<< HEAD
 				<script>OGcaution("%2","HIGHJUMPED")</script>
+=======
+				<script>OGcaution(""..matches[3],"HIGHJUMPED")</script>
+>>>>>>> updates
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -505,7 +513,11 @@ ogquicktarget = matches[2]</script>
 			</Trigger>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>p5</name>
+<<<<<<< HEAD
 				<script>OGcaution("%1","PFIFTHED!!! BLANKNOTE or HINDER")</script>
+=======
+				<script>OGcaution(""..matches[2],"PFIFTHED!!! BLANKNOTE or HINDER")</script>
+>>>>>>> updates
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -828,6 +840,7 @@ end</script>
 			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 				<name>Tumbled out</name>
 				<script>if is_target(matches[2]) then
+<<<<<<< HEAD
 overgrow("Target gone: Tumbled "..string.upper("%2").."!","cyan")
 end</script>
 				<triggerType>0</triggerType>
@@ -853,6 +866,9 @@ end</script>
 				<name>rad out</name>
 				<script>if is_target(matches[2]) then
 overgrow("Target gone: RAD RUNE")
+=======
+overgrow("Target gone: Tumbled "..string.upper(matches[3]).."!","cyan")
+>>>>>>> updates
 end</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
@@ -865,6 +881,7 @@ end</script>
 				<colorTriggerFgColor>#000000</colorTriggerFgColor>
 				<colorTriggerBgColor>#000000</colorTriggerBgColor>
 				<regexCodeList>
+<<<<<<< HEAD
 					<string>^Blinking in astonishment\, ([A-Z][a-z]+) disappears in a flash of light\.$</string>
 				</regexCodeList>
 				<regexCodePropertyList>
@@ -875,6 +892,20 @@ end</script>
 				<name>rad in</name>
 				<script>if is_target(matches[2]) then
 overgrow("Target returned: RAD RUNE")
+=======
+					<string>^([A-Z][a-z]+) tumbles out to the (\w+)\.$</string>
+					<string>^([A-Z][a-z]+) jumps up and tucks [hH](?:im|er)self into a somersault\, diving past obstructions to the (\w+)\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>rad out</name>
+				<script>if is_target(matches[2]) then
+overgrow("Target gone: RAD RUNE")
+>>>>>>> updates
 end</script>
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
@@ -887,6 +918,33 @@ end</script>
 				<colorTriggerFgColor>#000000</colorTriggerFgColor>
 				<colorTriggerBgColor>#000000</colorTriggerBgColor>
 				<regexCodeList>
+<<<<<<< HEAD
+=======
+					<string>^Blinking in astonishment\, ([A-Z][a-z]+) disappears in a flash of light\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>rad in</name>
+				<script>if is_target(matches[2]) then
+overgrow("Target returned: RAD RUNE")
+end
+ognote("QT to target "..matches[2])
+ogquicktarget = matches[2]</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+>>>>>>> updates
 					<string>^(\w+) appears in a flash of light\, blinking in astonishment\.$</string>
 				</regexCodeList>
 				<regexCodePropertyList>
@@ -897,7 +955,13 @@ end</script>
 				<name>Willowisp</name>
 				<script>if is_target(matches[2]) then
 overgrow("Target returned: Willowisp")
+<<<<<<< HEAD
 end</script>
+=======
+end
+ognote("QT to target "..matches[2])
+ogquicktarget = matches[2]</script>
+>>>>>>> updates
 				<triggerType>0</triggerType>
 				<conditonLineDelta>0</conditonLineDelta>
 				<mStayOpen>0</mStayOpen>
@@ -1507,6 +1571,147 @@ ogquicktarget = string.title(matches[5]) </script>
 				</regexCodePropertyList>
 			</Trigger>
 		</TriggerGroup>
+<<<<<<< HEAD
+=======
+		<TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<name>AC GUESS</name>
+			<script></script>
+			<triggerType>0</triggerType>
+			<conditonLineDelta>0</conditonLineDelta>
+			<mStayOpen>0</mStayOpen>
+			<mCommand></mCommand>
+			<packageName></packageName>
+			<mFgColor>#ff0000</mFgColor>
+			<mBgColor>#ffff00</mBgColor>
+			<mSoundFile></mSoundFile>
+			<colorTriggerFgColor>#000000</colorTriggerFgColor>
+			<colorTriggerBgColor>#000000</colorTriggerBgColor>
+			<regexCodeList />
+			<regexCodePropertyList />
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>masked runes</name>
+				<script>send("ac guess internal")
+send("ac guess mental")
+send("ac guess spiritual")</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^(\w+) slings two masked runes at you\, hitting you in the chest\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>haemophilia</name>
+				<script>send("ac guess haemophilia")</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^Your blood refuses to clot\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>powersap</name>
+				<script>send("ac guess powersap")</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>You gasp and shiver as you feel yourself losing control of your own power.</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>3</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>disloyalty</name>
+				<script>send("ac guess disloyalty")</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>You stand in such dishonour that not even your loyal friends will help you.</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>3</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>asthma</name>
+				<script>send("ac guess asthma")</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^Your lungs are much too constricted to smoke\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>crushedchest</name>
+				<script>send("ac guess crushedchest")</script>
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand></mCommand>
+				<packageName></packageName>
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile></mSoundFile>
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^A wave of pain radiating from your crushed chest robs you of focus\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+		</TriggerGroup>
+>>>>>>> updates
 	</TriggerPackage>
 	<TimerPackage />
 	<AliasPackage>
@@ -1545,6 +1750,16 @@ ognote("Leader set to: "..ogleader)</script>
 			<packageName></packageName>
 			<regex>^a (.+?)$</regex>
 		</Alias>
+<<<<<<< HEAD
+=======
+		<Alias isActive="yes" isFolder="no">
+			<name>Go to Leader</name>
+			<script>Send("path track "..leader_room)</script>
+			<command></command>
+			<packageName></packageName>
+			<regex>^gogo$</regex>
+		</Alias>
+>>>>>>> updates
 	</AliasPackage>
 	<ActionPackage />
 	<ScriptPackage>
